@@ -1,0 +1,5 @@
+applications:
+- memory: 128M
+  name: api-user-role-permission-v4-0-1
+  services:
+  - tmf-compose-for-mongodb

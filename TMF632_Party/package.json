@@ -1,0 +1,39 @@
+{
+  "name": "api-party",
+  "version": "4.0.0",
+  "description": "## TMF API Reference : TMF 632 - Party   ### Release : 19.0   The party API provides standardized mechanism for party management such as creation, update, retrieval, deletion and notification of events. Party can be an individual or an organization that has any kind of relation with the enterprise. Party is created to record individual or organization information before the assignment of any role. For example, within the context of a split billing mechanism, Party API allows creation of the individual or organization that will play the role of 3 rd payer for a given offer and, then, allows consultation or update of his information.  ### Resources - Organization - Individual - Hub  Party API performs the following operations : - Retrieve an organization or an individual - Retrieve a collection of organizations or individuals according to given criteria - Create a new organization or a new individual - Update an existing organization or an existing individual - Delete an existing organization or an existing individual - Notify events on organizatin or individual",
+  "main": "index.js",
+  "scripts": {
+	"prestart": "npm install",
+	"start": "node index.js"
+  },
+  "keywords": [
+    "swagger"
+  ],
+  "license": "Unlicense",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "^1.15.2",
+    "cfenv": "^1.0.3",
+    "commander": "^2.6.0",
+    "connect": "^3.2.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.15.3",
+    "http-post": "^0.1.1",
+    "http-proxy": "^1.8.1",
+    "js-yaml": "^3.3.0",
+    "mongodb": "^3.1.1",
+    "query-to-mongo": "^0.9.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2",
+    "swagger-tools": "0.10.1",
+    "swagger-ui-dist": "^3.17.6",
+    "untildify": "^3.0.3",
+    "uuid": "^3.3.2"
+  },
+  "engines": {
+    "node": ">=8.10",
+    "npm": ">=6.0"
+  }
+}

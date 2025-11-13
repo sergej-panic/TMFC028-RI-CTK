@@ -1,0 +1,115 @@
+#################################################################
+########### Running ctk on TMFC028-RI and TMFC035-RI ############
+#################################################################
+
+(Note: "cmd>" represents a command line)
+
+(tested and working on Canvas version 1.2.4-AK1, Kubernetes core APIs: v1.34.1)
+
+
+
+############# First: Deploy the TMFC028 and TMFC035 components to the ODA canvas. #############
+
+1.) cmd> cd <projectFolder>\TMFC028-PartyManagement\CTK\ComponentRI
+
+2.) cmd> helm install par . -n components
+
+3.) cmd> kubectl get exposedapis -n components
+
+    You should see this:
+
+    NAME                             API_ENDPOINT                                   IMPLEMENTATION_READY
+    par-party-party-management-api   https://localhost/par-party/tmf-api/party/v4   true
+
+4.) cmd> kubectl get dependentapis -n components
+
+    You should see that the par-party component does not have its dependent api in READY=true status
+
+    NAME                                  READY   AGE   SVCINVID   URL
+    par-party-party-role-management-api           25s
+
+
+5.) cmd> cd <projectFolder>\TMFC035-PermissionsManagement\CTK\ComponentRI
+
+6.) cmd> helm install per . -n components
+
+
+7.) cmd> kubectl get exposedapis -n components
+
+    You should see:
+
+    NAME                                                API_ENDPOINT                                                      IMPLEMENTATION_READY
+    par-party-party-management-api                      https://localhost/par-party/tmf-api/party/v4                      true
+    per-permission-party-role-management-api            https://localhost/per-permission/tmf-api/partyRoleManagement/v4   true
+    per-permission-userrole-permission-management-api   https://localhost/per-permission/userrolepermission/v4            true
+
+8.) cmd> kubectl get dependentapis -n components
+
+    You should see that the par-party component still does not have its dependent API in READY=true status, and the per-permission component does not either.
+
+    NAME                                  READY   AGE   SVCINVID   URL
+    par-party-party-role-management-api           18m
+    per-permission-party-management-api           18m
+
+9.) The reason why party component has it dependent api not yet in status READ=true, is that there is a circular dependency between TMFC028 and TMFC035.
+    You must restart the canvas-depapi-op deployment, so that it resolves this cycle.
+
+    cmd> kubectl rollout restart deployment canvas-depapi-op -n canvas
+
+10.) cmd> kubectl get dependentapis -n components
+
+    Now both dependent apis are in status READ=true
+
+    NAME                                  READY   AGE    SVCINVID                               URL
+    par-party-party-role-management-api   true    19m    fb52b03f-0566-431e-8ec5-f8060a89072b   https://localhost/per-permission/tmf-api/partyRoleManagement/v4
+    per-permission-party-management-api   true    7m9s   8a7e8764-cf89-4a68-96dd-395e180b98db   https://localhost/par-party/tmf-api/party/v4
+
+11.) cmd> kubectl component-info
+
+    Now you should see both components are now in Deployment Status Complete:
+
+    Using Components Custom Resource Definition: v1
+
+
+    Component: par-party
+    Namespace: components
+    Deployment Status: Complete
+    └─ APIs
+       └─ coreFunction
+          └─ par-party-party-management-api
+             ├─ url: https://localhost/par-party/tmf-api/party/v4
+             ├─ ready: true
+             └─ developerUI: https://localhost/par-party/tmf-api/party/v4/docs
+
+
+
+
+    Component: per-permission
+    Namespace: components
+    Deployment Status: Complete
+    └─ APIs
+       └─ coreFunction
+          ├─ per-permission-userrole-permission-management-api
+          │  ├─ url: https://localhost/per-permission/userrolepermission/v4
+          │  ├─ ready: true
+          │  └─ developerUI: https://localhost/per-permission/userrolepermission/v4/docs
+          └─ per-permission-party-role-management-api
+             ├─ url: https://localhost/per-permission/tmf-api/partyRoleManagement/v4
+             ├─ ready: true
+             └─ developerUI: https://localhost/per-permission/tmf-api/partyRoleManagement/v4/docs
+
+
+############# Second: run the CTK #############
+
+1.) edit the CHANGE_ME.json in the directory componentCTK:
+
+    /releaseName="par"
+    /component_to_run="tmfc028
+    /dependentStubs/tmfc028/partyRole/releaseName="per"
+
+2.) run the CTK test script in the directory componentCTK:
+
+    WINDOWS-RUN.bat, run.sh or MAC-LINUX-RUN.sh
+
+
+

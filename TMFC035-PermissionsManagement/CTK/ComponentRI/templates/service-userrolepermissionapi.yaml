@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{.Release.Name}}-userrolepermissionapi
+  labels:
+    app: {{.Release.Name}}-partyroleapi
+    oda.tmforum.org/componentName: {{.Release.Name}}-{{.Values.component.name}}
+spec:
+  ports:
+  - port: 8080
+    targetPort: {{.Release.Name}}-urpma
+    name: http-{{.Release.Name}}-userrolepermissionapi
+  type: NodePort
+  selector:
+    impl: {{.Release.Name}}-userrolepermissionapi

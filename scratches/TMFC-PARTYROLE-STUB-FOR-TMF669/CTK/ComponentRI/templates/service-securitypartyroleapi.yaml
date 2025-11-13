@@ -1,0 +1,19 @@
+# !!!!!!!!!!!!!!!!!!
+#  For now, do not change service name to "securitypartyroleapi" because k8s service name is mapped in internal DNS as hostname="<.Release.Name>-partyroleapi".
+#  And currently, image in cronjob-securityroleinitialization.yaml has "partyroleapi" hardoded in hostname to POST the Admin role to http://<.Release.Name>-partyroleapi:8080/<env.COMPONENT_NAME>/tmf-api/partyRoleManagement/v4/partyRole
+# !!!!!!!!!!!!!!!!!!
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{.Release.Name}}-partyroleapi
+  labels:
+    app: {{.Release.Name}}-{{.Values.component.name}}
+    oda.tmforum.org/componentName: {{.Release.Name}}-{{.Values.component.name}}
+spec:
+  ports:
+  - port: 8080
+    targetPort: {{.Release.Name}}-sprapi  # sprapi => acronym for (S)ecurity(P)arty(R)ole(A)pi
+    name: http-{{.Release.Name}}-securitypartyroleapi
+  type: NodePort
+  selector:
+    impl: {{.Release.Name}}-securitypartyroleapi

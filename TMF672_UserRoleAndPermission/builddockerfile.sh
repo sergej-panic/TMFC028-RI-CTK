@@ -1,0 +1,1 @@
+docker build . -t cr.marand.si/sergejp/tmf/userrolepermissionapi:0.1

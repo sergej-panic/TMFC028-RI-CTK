@@ -1,0 +1,54 @@
+# Default values for servicecatalog.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+component:
+  # TMF669 Party Role API wrapped as an ODA component to be used as the Reference Implementation for the mandatory dependent API of the TMFC028 Party Management Reference Implementation component
+  id: "TMFC-PARTYROLE-STUB-FOR-TMF669"
+  name: partyrole
+  functionalBlock: Party
+  publicationDate: "2025-11-15T00:00:00Z"
+  version: "0.0.1"
+  storageClassName: default
+  apipolicy:
+    apiKeyVerification:
+      enabled: false
+      location: "header"
+    rateLimit:
+      enabled: false
+      identifier: "IP"
+      limit: "6"
+      interval: "pm"
+    quota:
+      identifier: ""
+      limit: ""
+    OASValidation:
+      requestEnabled: false
+      responseEnabled: false
+      allowUnspecifiedHeaders: false
+      allowUnspecifiedQueryParams: false
+      allowUnspecifiedCookies: false
+    CORS:
+      enabled: false
+      allowCredentials: false
+      allowOrigins: "https://allowed-origin.com, https://allowed-origin2.com"
+      handlePreflightRequests:
+        enabled: false
+        allowHeaders: "Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers"
+        allowMethods: "GET, POST"
+        maxAge: 36000
+    template: ""
+security:
+  canvasSystemRole: Admin
+service:
+  type: ClusterIP
+  port: 80
+mongodb:
+  port: 27017
+  database: tmf
+securitypartyrole:
+  image: lesterthomas/partyroleapi:1.0
+  versionlabel: partyroleapi-1.0
+api:
+  image: lesterthomas/partyroleapi:1.0
+  versionlabel: partyroleapi-1.0

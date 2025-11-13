@@ -1,0 +1,30 @@
+{
+    "companyName": "<COMPANY_NAME>",
+    "productName": "<PRODUCT_NAME>",
+    "productUrl": "<PRODUCT_WEBPAGE_URL>",
+    "componentUrl": "https://www.tmforum.org/oda/directory/components-map",
+    "headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+    },
+    "payloads": {
+        "TMF669_v4": {
+            "PartyRole": {
+                "POST": {
+                    "payload": {
+                        "name": "qqymucymyd"
+                    }
+                }
+            }
+        }
+    },
+    "rejectUnauthorized": false,
+    "goldenComponentFilePath": "../resources/standard-components/TMFC028-PartyManagement.yaml",
+    "componentName": "TMFC028-PartyManagement",
+    "componentFilePath": "../resources/component-par.yaml",
+    "component_namespace": "components",
+    "runExposedOptional": false,
+    "runDependentOptional": false,
+    "runSecurityOptional": false,
+    "ctkConfig": {}
+}

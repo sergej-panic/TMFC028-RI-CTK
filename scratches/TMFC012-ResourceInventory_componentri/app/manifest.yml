@@ -1,0 +1,6 @@
+applications:
+- name: api-resource-inventory-management
+  host: 
+  memory: 640M
+  services:
+    - tmf-compose-for-mongodb
