@@ -2,10 +2,10 @@
 ########### Running ctk on TMFC028-RI and TMFC035-RI ############
 #################################################################
 
-(Note: "cmd>" represents a command line)
-
-(tested and working on Canvas version 1.2.4-AK1, Kubernetes core APIs: v1.34.1)
-
+Note:
+- tested and working on Canvas version 1.2.4-AK1, Kubernetes core APIs: v1.34.1)
+- "cmd>" represents a command line
+- "<projectFolder>"" refers to the folder where the curent README file resides
 
 
 ############# First: Deploy the TMFC028 and TMFC035 components to the ODA canvas. #############
@@ -101,13 +101,15 @@
 
 ############# Second: run the CTK #############
 
-1.) edit the CHANGE_ME.json in the directory componentCTK:
+1.) cmd> cd <projectFolder>\TMFC028-PartyManagement\CTK\componentCTK
+
+2.) edit the CHANGE_ME.json in the directory componentCTK:
 
     /releaseName="par"
     /component_to_run="tmfc028
     /dependentStubs/tmfc028/partyRole/releaseName="per"
 
-2.) run the CTK test script in the directory componentCTK:
+3.) run the CTK test script in the directory componentCTK:
 
     WINDOWS-RUN.bat, run.sh or MAC-LINUX-RUN.sh
 
