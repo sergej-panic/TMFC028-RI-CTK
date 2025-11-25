@@ -59,7 +59,6 @@ in "party.engagedParty[0]" actually exists in the TMFC035 PartyRole service.
     cmd> helm install per . -n components
 
 8.) The per-permission component will fully deploy, with status "Complete".
-    It is waiting for the dependendent party api from the TMFC028 component to become ready.
     The per-party still remains in status "In-Progress-DepApi"
 
     cmd> kubectl get components -n components
@@ -87,7 +86,7 @@ in "party.engagedParty[0]" actually exists in the TMFC035 PartyRole service.
     per-permission-party-management-api   true    5m55s   19380cc0-a7c3-452b-a819-42a74ccb9fda   https://localhost/par-party/tmf-api/party/v4
 
 11.) The reason why party component does not yet have its dependent api in the state READY=true, is that there is a circular dependency between TMFC028 and TMFC035.
-    To resolve this cycle, you must restart the canvas-depapi-op deployment.
+     To resolve this cycle, you must restart the canvas-depapi-op deployment.
 
     cmd> kubectl rollout restart deployment canvas-depapi-op -n canvas
 

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3085e4be-decd-43a0-ab55-7e6c69785d81" name="Changes" comment="add original TMF openapis alongside dockerized ones">
+    <list default="true" id="3085e4be-decd-43a0-ab55-7e6c69785d81" name="Changes" comment="update readme">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README-running-ctk-on-TMFC028-RI-and-TMFC035-RI" beforeDir="false" afterPath="$PROJECT_DIR$/README-running-ctk-on-TMFC028-RI-and-TMFC035-RI" afterDir="false" />
     </list>
@@ -59,6 +59,11 @@
     "settings.editor.selected.configurable": "http.proxy",
     "vcs.patch.path": "C:/Users/SergejP/Dropbox/backup",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "TEXT"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -130,7 +135,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1763998045588</updated>
-      <workItem from="1763998046544" duration="29369000" />
+      <workItem from="1763998046544" duration="35883000" />
     </task>
     <task id="LOCAL-00001" summary="interm commit">
       <option name="closed" value="true" />
@@ -252,7 +257,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764082818651</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="update readme">
+      <option name="closed" value="true" />
+      <created>1764084025572</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1764084025572</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,14 +289,14 @@
     <MESSAGE value="initial commit as a starting point" />
     <MESSAGE value="initial commit" />
     <MESSAGE value="rewrite http or https in validateRelatedPartyHref" />
-    <MESSAGE value="update readme" />
     <MESSAGE value="update useful cmds" />
     <MESSAGE value="idea" />
     <MESSAGE value="better error message  in validateRelatedPartyHref" />
     <MESSAGE value="reorg folders and update readmes" />
     <MESSAGE value="add original TMF openapis alongside dockerized ones" />
     <MESSAGE value="set &lt;RELEASE_NAME&gt; to  party-role-0001.json href" />
-    <option name="LAST_COMMIT_MESSAGE" value="set &lt;RELEASE_NAME&gt; to  party-role-0001.json href" />
+    <MESSAGE value="update readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="update readme" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
