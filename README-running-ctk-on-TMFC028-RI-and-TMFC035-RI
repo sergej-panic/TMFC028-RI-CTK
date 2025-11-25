@@ -10,6 +10,13 @@ Note:
 
 ############# First: Deploy the TMFC028 and TMFC035 components to the ODA canvas. #############
 
+We need to deploy TMFC028 Party compoment.
+And also TMFC035 Permission component which is implemented as a stub. It exposes the TMF669 PartyRole API core function for the
+TMFC028 Party component, which depends on this API. This stub is used when running the TMFC028 CTK BDD tests.
+It allows the TMFC028 Party component to interact with the PartyRole API and verify that a partyRole instance referenced
+in "party.engagedParty[0]" actually exists in the TMFC035 PartyRole service.
+
+
 1.) Open CMD terminal and navigate to the TMFC028 Party ComponentRI folder.
 
     cmd> cd <projectFolder>\TMFC028-PartyManagement\CTK\ComponentRI
@@ -45,7 +52,7 @@ Note:
 
 6.) Navigate to the TMFC035 Permission ComponentRI folder.
 
-    cmd> cd <projectFolder>\TMFC035-PermissionsManagement\CTK\ComponentRI
+    cmd> cd <projectFolder>\TMFC035-PermissionsManagement-stub\CTK\ComponentRI
 
 7.) Install the Permission component onto the oda-canvas. Let's use "per" as the release name.
 
