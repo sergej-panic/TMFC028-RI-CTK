@@ -440,11 +440,25 @@ async function validateRelatedPartyHref(payload) {
 
     console.log(`Successfully validated relatedParty.href: ${href}`);
   } catch (err) {
-    throw new TError(TErrorEnum.UNPROCESSABLE_ENTITY, `Could not resolve relatedParty.href: ${href}`);
+
+    if (err instanceof Error) {
+      console.error(`Error caught: ${err.stack}`);
+    } else {
+      console.error(`Error caught: ${JSON.stringify(err, null, 2)}`);
+    }
+
+    const reason =
+      err instanceof Error ? err.message : JSON.stringify(err);
+
+
+    throw new TError(TErrorEnum.UNPROCESSABLE_ENTITY, `Could not resolve relatedParty.href: ${href}. Reason: ${reason}`);
   }
 
   return payload;
 }
+
+
+
 
 /*
 This function is not used, but we left it here just in case as an alterantive to the above validateRelatedPartyHref().
