@@ -1,0 +1,581 @@
+
+
+C:\Users\SergejP\Downloads\trash\TMFC028-project\TMFC028-project>cd .\TMFC028-PartyManagement\CTK\ComponentRI
+
+C:\Users\SergejP\Downloads\trash\TMFC028-project\TMFC028-project\TMFC028-PartyManagement\CTK\ComponentRI>helm install parrr . -n components
+NAME: parrr
+LAST DEPLOYED: Wed Nov 26 00:12:58 2025
+NAMESPACE: components
+STATUS: deployed
+REVISION: 1
+
+C:\Users\SergejP\Downloads\trash\TMFC028-project\TMFC028-project\TMFC028-PartyManagement\CTK\ComponentRI>kubectl get exposedapis -n components
+NAME                               API_ENDPOINT                                     IMPLEMENTATION_READY
+parrr-party-party-management-api   https://localhost/parrr-party/tmf-api/party/v4
+
+C:\Users\SergejP\Downloads\trash\TMFC028-project\TMFC028-project\TMFC028-PartyManagement\CTK\ComponentRI>kubectl get exposedapis -n componentskubectl get exposedapis -n components
+
+C:\Users\SergejP\Downloads\trash\TMFC028-project\TMFC028-project\TMFC028-PartyManagement\CTK\ComponentRI>kubectl get dependentapis -n components
+NAME                                    READY   AGE   SVCINVID   URL
+parrr-party-party-role-management-api           15s
+
+C:\Users\SergejP\Downloads\trash\TMFC028-project\TMFC028-project\TMFC028-PartyManagement\CTK\ComponentRI>cd ..
+
+C:\Users\SergejP\Downloads\trash\TMFC028-project\TMFC028-project\TMFC028-PartyManagement\CTK>cd ..
+
+C:\Users\SergejP\Downloads\trash\TMFC028-project\TMFC028-project\TMFC028-PartyManagement>cd ..
+
+C:\Users\SergejP\Downloads\trash\TMFC028-project\TMFC028-project>cd .\TMFC035-PermissionsManagement-stub\CTK\ComponentRI
+
+C:\Users\SergejP\Downloads\trash\TMFC028-project\TMFC028-project\TMFC035-PermissionsManagement-stub\CTK\ComponentRI>kubectl get exposedapis -n components
+
+C:\Users\SergejP\Downloads\trash\TMFC028-project\TMFC028-project\TMFC035-PermissionsManagement-stub\CTK\ComponentRI>helm install perrr . -n components
+NAME: perrr
+LAST DEPLOYED: Wed Nov 26 00:13:51 2025
+NAMESPACE: components
+STATUS: deployed
+REVISION: 1
+
+C:\Users\SergejP\Downloads\trash\TMFC028-project\TMFC028-project\TMFC035-PermissionsManagement-stub\CTK\ComponentRI>kubectl get dependentapis -n components
+NAME                                    READY   AGE   SVCINVID                               URL
+parrr-party-party-role-management-api           58s
+perrr-permission-party-management-api   true    5s    646127e0-9458-41a5-a851-0a3aa11e3d28   https://localhost/parrr-party/tmf-api/party/v4
+
+C:\Users\SergejP\Downloads\trash\TMFC028-project\TMFC028-project\TMFC035-PermissionsManagement-stub\CTK\ComponentRI>kubectl get exposedapis -n components
+NAME                                                  API_ENDPOINT                                                        IMPLEMENTATION_READY
+parrr-party-party-management-api                      https://localhost/parrr-party/tmf-api/party/v4                      true
+perrr-permission-party-role-management-api            https://localhost/perrr-permission/tmf-api/partyRoleManagement/v4
+perrr-permission-userrole-permission-management-api   https://localhost/perrr-permission/userrolepermission/v4
+
+C:\Users\SergejP\Downloads\trash\TMFC028-project\TMFC028-project\TMFC035-PermissionsManagement-stub\CTK\ComponentRI>kubectl rollout restart deployment canvas-depapi-op -n canvas
+deployment.apps/canvas-depapi-op restarted
+
+C:\Users\SergejP\Downloads\trash\TMFC028-project\TMFC028-project\TMFC035-PermissionsManagement-stub\CTK\ComponentRI>kubectl get dependentapis -n components
+NAME                                    READY   AGE    SVCINVID                               URL
+parrr-party-party-role-management-api           105s
+perrr-permission-party-management-api   true    52s    646127e0-9458-41a5-a851-0a3aa11e3d28   https://localhost/parrr-party/tmf-api/party/v4
+
+C:\Users\SergejP\Downloads\trash\TMFC028-project\TMFC028-project\TMFC035-PermissionsManagement-stub\CTK\ComponentRI>kubectl get dependentapis -n components
+NAME                                    READY   AGE    SVCINVID                               URL
+parrr-party-party-role-management-api   true    106s   924eec64-3ac0-47d6-afec-3b6b21c715c5   https://localhost/perrr-permission/tmf-api/partyRoleManagement/v4
+perrr-permission-party-management-api   true    53s    646127e0-9458-41a5-a851-0a3aa11e3d28   https://localhost/parrr-party/tmf-api/party/v4
+
+C:\Users\SergejP\Downloads\trash\TMFC028-project\TMFC028-project\TMFC035-PermissionsManagement-stub\CTK\ComponentRI>kubectl get components -n components
+NAME               DEPLOYMENT_STATUS
+parrr-party        Complete
+perrr-permission   Complete
+
+C:\Users\SergejP\Downloads\trash\TMFC028-project\TMFC028-project\TMFC035-PermissionsManagement-stub\CTK\ComponentRI>kubectl component-info
+Using Components Custom Resource Definition: v1
+
+
+Component: parrr-party
+Namespace: components
+Deployment Status: Complete
+└─ APIs
+   └─ coreFunction
+      └─ parrr-party-party-management-api
+         ├─ url: https://localhost/parrr-party/tmf-api/party/v4
+         ├─ ready: true
+         └─ developerUI: https://localhost/parrr-party/tmf-api/party/v4/docs
+
+
+
+
+Component: perrr-permission
+Namespace: components
+Deployment Status: Complete
+└─ APIs
+   └─ coreFunction
+      ├─ perrr-permission-userrole-permission-management-api
+      │  ├─ url: https://localhost/perrr-permission/userrolepermission/v4
+      │  ├─ ready: true
+      │  └─ developerUI: https://localhost/perrr-permission/userrolepermission/v4/docs
+      └─ perrr-permission-party-role-management-api
+         ├─ url: https://localhost/perrr-permission/tmf-api/partyRoleManagement/v4
+         ├─ ready: true
+         └─ developerUI: https://localhost/perrr-permission/tmf-api/partyRoleManagement/v4/docs
+
+
+
+C:\Users\SergejP\Downloads\trash\TMFC028-project\TMFC028-project\TMFC035-PermissionsManagement-stub\CTK\ComponentRI>cd ..
+
+C:\Users\SergejP\Downloads\trash\TMFC028-project\TMFC028-project\TMFC035-PermissionsManagement-stub\CTK>cd ,,
+C:\Users\SergejP\Downloads\trash\TMFC028-project\TMFC028-project\TMFC035-PermissionsManagement-stub\CTK
+
+C:\Users\SergejP\Downloads\trash\TMFC028-project\TMFC028-project\TMFC035-PermissionsManagement-stub\CTK>cd ,,
+C:\Users\SergejP\Downloads\trash\TMFC028-project\TMFC028-project\TMFC035-PermissionsManagement-stub\CTK
+
+C:\Users\SergejP\Downloads\trash\TMFC028-project\TMFC028-project\TMFC035-PermissionsManagement-stub\CTK>cd ..
+
+C:\Users\SergejP\Downloads\trash\TMFC028-project\TMFC028-project\TMFC035-PermissionsManagement-stub>cd ..
+
+C:\Users\SergejP\Downloads\trash\TMFC028-project\TMFC028-project>cd TMFC028-PartyManagement
+
+C:\Users\SergejP\Downloads\trash\TMFC028-project\TMFC028-project\TMFC028-PartyManagement>cd CTK
+
+C:\Users\SergejP\Downloads\trash\TMFC028-project\TMFC028-project\TMFC028-PartyManagement\CTK>cd componentCTK
+
+C:\Users\SergejP\Downloads\trash\TMFC028-project\TMFC028-project\TMFC028-PartyManagement\CTK\componentCTK>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 5685-236F
+
+ Directory of C:\Users\SergejP\Downloads\trash\TMFC028-project\TMFC028-project\TMFC028-PartyManagement\CTK\componentCTK
+
+25/11/2025  23:55    <DIR>          .
+24/11/2025  16:07    <DIR>          ..
+25/11/2025  23:55            16.805 CHANGE_ME.json
+05/11/2025  06:03               391 MAC-LINUX-RUN.sh
+05/11/2025  06:03             9.005 README
+05/11/2025  06:03               188 run.sh
+24/11/2025  16:07    <DIR>          scripts
+25/11/2025  23:55    <DIR>          src
+19/11/2025  08:50               362 WINDOWS-RUN.bat
+               5 File(s)         26.751 bytes
+               4 Dir(s)  444.324.634.624 bytes free
+
+C:\Users\SergejP\Downloads\trash\TMFC028-project\TMFC028-project\TMFC028-PartyManagement\CTK\componentCTK>notepad++
+'notepad++' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\SergejP\Downloads\trash\TMFC028-project\TMFC028-project\TMFC028-PartyManagement\CTK\componentCTK>notepad CHANGE_ME.json
+
+C:\Users\SergejP\Downloads\trash\TMFC028-project\TMFC028-project\TMFC028-PartyManagement\CTK\componentCTK>notepad CHANGE_ME.json
+
+C:\Users\SergejP\Downloads\trash\TMFC028-project\TMFC028-project\TMFC028-PartyManagement\CTK\componentCTK>WINDOWS-RUN.bat
+≡ƒÜÇ Starting CTK Execution (Windows)...
+≡ƒôª Installing Python dependencies...
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: requests>=2.25.0 in c:\users\sergejp\appdata\roaming\python\python313\site-packages (from -r requirements.txt (line 1)) (2.32.3)
+Requirement already satisfied: pyyaml>=5.3.1 in c:\users\sergejp\appdata\roaming\python\python313\site-packages (from -r requirements.txt (line 2)) (6.0.2)
+Requirement already satisfied: charset-normalizer<4,>=2 in c:\users\sergejp\appdata\roaming\python\python313\site-packages (from requests>=2.25.0->-r requirements.txt (line 1)) (3.4.2)
+Requirement already satisfied: idna<4,>=2.5 in c:\users\sergejp\appdata\roaming\python\python313\site-packages (from requests>=2.25.0->-r requirements.txt (line 1)) (3.10)
+Requirement already satisfied: urllib3<3,>=1.21.1 in c:\users\sergejp\appdata\roaming\python\python313\site-packages (from requests>=2.25.0->-r requirements.txt (line 1)) (2.4.0)
+Requirement already satisfied: certifi>=2017.4.17 in c:\users\sergejp\appdata\roaming\python\python313\site-packages (from requests>=2.25.0->-r requirements.txt (line 1)) (2025.4.26)
+
+[notice] A new release of pip is available: 25.0.1 -> 25.3
+[notice] To update, run: python.exe -m pip install --upgrade pip
+≡ƒº¬ Running CTK Executor...
+Created fresh results directory: ..\..\componentCTK\resources\results
+Component download url: https://api.github.com/repos/tmforum-rand/TMForum-ODA-Ready-for-publication/contents?ref=v1.0.0
+C:\Users\SergejP\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'api.github.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+Downloading YAML from: https://raw.githubusercontent.com/tmforum-rand/TMForum-ODA-Ready-for-publication/refs/heads/v1.0.0/TMFC028-PartyManagement/Specification/TMFC028-PartyManagement.yaml
+C:\Users\SergejP\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'raw.githubusercontent.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+Component YAML saved to: ..\resources\standard-components\TMFC028-PartyManagement.yaml
+Component YAML is ready at: ..\resources\standard-components\TMFC028-PartyManagement.yaml
+Generating component.yaml file for deployed Component.
+Component manifest saved to: ..\..\componentCTK/resources/component-parrr.yaml
+Old ctkconfig.json removed from: ..\..\componentCTK\src\ctkconfig.json
+Created bdd payloads directory: ..\..\componentCTK\src\features\payloads
+Created payload file: ..\..\componentCTK\src\features\payloads\party-target-0001.json
+Created payload file: ..\..\componentCTK\src\features\payloads\party-target-0002.json
+Created payload file: ..\..\componentCTK\src\features\payloads\party-role-0001.json
+reading yaml file at path:  ..\resources\standard-components\TMFC028-PartyManagement.yaml
+==============================
+Exposed APIs
+==============================
+Checking CTK for TMF632
+Downloading CTK for TMF632
+https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/TMF632_Party/4.0.0/ctk/TMF632-Party-v4.0.0.zip
+C:\Users\SergejP\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+File downloaded successfully: ..\..\componentCTK\resources\api-ctks\TMF632_v4.zip
+File extracted to: ..\..\componentCTK\resources\api-ctks
+Renamed ..\..\componentCTK\resources\api-ctks\CTK to ..\..\componentCTK\resources\api-ctks\TMF632_v4
+nested_ctk_path: ..\..\componentCTK\resources\api-ctks\TMF632_v4\CTK, nested_config_path: ..\..\componentCTK\resources\api-ctks\TMF632_v4\CTK\config.json
+is nested ctk path dir: True config is file: False
+CTK directory structure is already normalized at: ..\..\componentCTK\resources\api-ctks\TMF632_v4
+Checking CTK for TMF701
+==============================
+Dependent APIs
+==============================
+Checking CTK for TMF669
+Downloading CTK for TMF669
+https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/TMF669_Party_Role/4.0.0/ctk/TMF669-PartyRole.zip
+C:\Users\SergejP\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+File downloaded successfully: ..\..\componentCTK\resources\api-ctks\TMF669_v4.zip
+File extracted to: ..\..\componentCTK\resources\api-ctks
+Renamed ..\..\componentCTK\resources\api-ctks\CTK to ..\..\componentCTK\resources\api-ctks\TMF669_v4
+nested_ctk_path: ..\..\componentCTK\resources\api-ctks\TMF669_v4\CTK, nested_config_path: ..\..\componentCTK\resources\api-ctks\TMF669_v4\CTK\config.json
+is nested ctk path dir: True config is file: False
+CTK directory structure is already normalized at: ..\..\componentCTK\resources\api-ctks\TMF669_v4
+Checking CTK for TMF673
+Checking CTK for TMF674
+Checking CTK for TMF675
+Checking CTK for TMF701
+Checking CTK for TMF688
+==============================
+Security APIs
+==============================
+Checking CTK for TMF669
+Downloading CTK for TMF669
+Generating Report
+npm warn deprecated @types/minipass@3.3.5: This is a stub types definition. minipass provides its own type definitions, so you do not need this installed.
+npm warn deprecated har-validator@5.1.5: this library is no longer supported
+npm warn deprecated reflect-metadata@0.2.1: This version has a critical bug in fallback handling. Please upgrade to reflect-metadata@0.2.2 or newer.
+npm warn deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm warn deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm warn deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+
+added 638 packages in 6s
+
+129 packages are looking for funding
+  run `npm fund` for details
+
+> component-ctk@0.0.1 start
+> node index.js
+
+
+
+
+
+  Step 0: Component file checks
+  Step 0: Basic environment connectivity tests
+Reading component file ../resources/component-parrr.yaml
+    √ File exists
+    √ File contains valid YAML
+
+  Step 1: Component manifest checks
+    √ Kubectl configured correctly (62ms)
+    √ Document of kind  'Component' is found
+
+  Step 1: Deployment component tests
+    √ Component api version is within supported versions
+    √ Component has metadata field
+    √ Component metadata has name and labels
+    √ Component has spec field
+    √ Spec has coreFunction with exposed and dependent APIs
+    √ Spec has security function
+    √ Security function has canvas system role or exposed apis
+    √ All resources are labelled with the component name
+    √ Standard component specification exists in ctk
+    √ Component ID from the manifest of component under test matches the standard specification
+    √ Exposed Apis defined in standard component specification must be specified in component manifest
+    √ Dependent APIs defined in the standard component specification must be specified in the component manifest
+    √ Component can be found in namespace: components
+    √ Component has deployed successfully (status: Complete)
+Only canvasSystemRole is defined, skipping API validation.
+    √ Security api must return at least one partyrole with canvas system role defined in component file
+    √ All swagger urls must be valid and accessible and version fields  (321ms)
+regex value is: /TMF\d+/g
+spec value is: https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/TMF632_Party/4.0.0/swagger/TMF632_Party_Management_API_v4.0.0_swagger.json
+matches value is: TMF632,TMF632
+api_ref is TMF632_v4 url: https://localhost/parrr-party/tmf-api/party/v4/
+{ TMF632_v4: 'https://localhost/parrr-party/tmf-api/party/v4/' }
+gc_apis value is: [object Object],[object Object]
+Configuring CTK for party-management-api
+api_ref for party-management-api is TMF632_v4
+ctk_location for TMF632_v4 will be: ..\resources\api-ctks\TMF632_v4
+gc_apis value is: [object Object]
+Configuring CTK for party-role-management-api
+api_ref for party-role-management-api is TMF669_v4
+ctk_location for TMF669_v4 will be: ..\resources\api-ctks\TMF669_v4
+Skipping CTK for security function API TMF669_v4 as implementation not found and is optional
+
+
+  16 passing (428ms)
+
+Configuring config.json https://127.0.0.1/parrr-party/tmf-api/party/v4/ { Accept: 'application/json', 'Content-Type': 'application/json' }
+Running api CTK for TMF632_v4
+Running command ..\resources\api-ctks\TMF632_v4\ctk
+[mochawesome] Report JSON saved to C:\Users\SergejP\Downloads\trash\TMFC028-project\TMFC028-project\TMFC028-PartyManagement\CTK\componentCTK\resources\results\baseline-ctk\Configuration-report.json
+
+[mochawesome] Report HTML saved to C:\Users\SergejP\Downloads\trash\TMFC028-project\TMFC028-project\TMFC028-PartyManagement\CTK\componentCTK\resources\results\baseline-ctk\Configuration-report.html
+
+    √ CTKs for exposed apis have been executed successfully (7236ms)
+
+
+  5 passing (7s)
+
+[mochawesome] Report JSON saved to C:\Users\SergejP\Downloads\trash\TMFC028-project\TMFC028-project\TMFC028-PartyManagement\CTK\componentCTK\resources\results\baseline-ctk\deployment-report.json
+
+[mochawesome] Report HTML saved to C:\Users\SergejP\Downloads\trash\TMFC028-project\TMFC028-project\TMFC028-PartyManagement\CTK\componentCTK\resources\results\baseline-ctk\deployment-report.html
+
+Running BDD tests for component: tmfc028
+Using tag filter: @tmfc028
+..\resources\results\cucumber-bdd\results.json string
+Feature tags: @tmfc002
+Component to run: tmfc028
+Skipping scenario: Test dependent API interactions with different payloads, as it does not match component_to_run.
+------No resources to clean up.
+-Feature tags: @tmfc002
+Component to run: tmfc028
+Skipping scenario: Test dependent API interactions with different payloads, as it does not match component_to_run.
+------No resources to clean up.
+-Feature tags: @tmfc002
+Component to run: tmfc028
+Skipping scenario: Test dependent API interactions with different payloads, as it does not match component_to_run.
+------No resources to clean up.
+-Feature tags: @tmfc002
+Component to run: tmfc028
+Skipping scenario: Test dependent API interactions with different payloads, as it does not match component_to_run.
+------No resources to clean up.
+-Feature tags: @tmfc005
+Component to run: tmfc028
+Skipping scenario: Test dependent API interactions with different payloads, as it does not match component_to_run.
+------No resources to clean up.
+-Feature tags: @tmfc005
+Component to run: tmfc028
+Skipping scenario: Test dependent API interactions with different payloads, as it does not match component_to_run.
+------No resources to clean up.
+-Feature tags: @tmfc007
+Component to run: tmfc028
+Skipping scenario: Test dependent API interactions with different payloads, as it does not match component_to_run.
+------No resources to clean up.
+-Feature tags: @tmfc007
+Component to run: tmfc028
+Skipping scenario: Test dependent API interactions with different payloads, as it does not match component_to_run.
+------No resources to clean up.
+-Feature tags: @tmfc007
+Component to run: tmfc028
+Skipping scenario: Test dependent API interactions with different payloads, as it does not match component_to_run.
+------No resources to clean up.
+-Feature tags: @tmfc007
+Component to run: tmfc028
+Skipping scenario: Test dependent API interactions with different payloads, as it does not match component_to_run.
+------No resources to clean up.
+-Feature tags: @tmfc008
+Component to run: tmfc028
+Skipping scenario: Test dependent API interactions with different payloads, as it does not match component_to_run.
+------No resources to clean up.
+-Feature tags: @tmfc008
+Component to run: tmfc028
+Skipping scenario: Test dependent API interactions with different payloads, as it does not match component_to_run.
+------No resources to clean up.
+-Feature tags: @tmfc012
+Component to run: tmfc028
+Skipping scenario: Test dependent API interactions with different payloads, as it does not match component_to_run.
+------No resources to clean up.
+-Feature tags: @tmfc012
+Component to run: tmfc028
+Skipping scenario: Test dependent API interactions with different payloads, as it does not match component_to_run.
+------No resources to clean up.
+-Feature tags: @tmfc028
+Component to run: tmfc028
+Running scenario: Test dependent API interactions with different payloads
+.✅ Extracted Exposed API URL: https://localhost/parrr-party/tmf-api/party/v4
+✅ Extracted Dependent API URL: https://localhost/perrr-permission/tmf-api/partyRoleManagement/v4
+Testing component: tmfc028
+Exposed API Base URL: https://localhost/parrr-party/tmf-api/party/v4
+Dependent API Base URL: https://localhost/perrr-permission/tmf-api/partyRoleManagement/v4
+.🔄 Checking if stub component is installed for dependent API 'permission'...
+.Initializing dependent API partyRole with basePayload
+Creating new resource via POST to: https://localhost/perrr-permission/tmf-api/partyRoleManagement/v4/partyRole
+
+📌 Sending API Request: POST https://localhost/perrr-permission/tmf-api/partyRoleManagement/v4/partyRole {
+  "name": "Acme Corporation - Supplier",
+  "engagedParty": {
+    "id": "dummyAcmePartyId",
+    "href": "https://localhost/<RELEASE_NAME>-party/tmf-api/party/v4/organization/dummyAcmePartyId",
+    "name": "Acme Corporation - Party",
+    "role": "Supplier",
+    "@referredType": "organization"
+  }
+}
+📌 Headers: {
+  "Accept": "application/json",
+  "Content-Type": "application/json"
+}
+
+✅ API Response [201]:
+{
+  "name": "Acme Corporation - Supplier",
+  "engagedParty": {
+    "id": "dummyAcmePartyId",
+    "href": "https://localhost/<RELEASE_NAME>-party/tmf-api/party/v4/organization/dummyAcmePartyId",
+    "name": "Acme Corporation - Party",
+    "role": "Supplier",
+    "@referredType": "organization"
+  },
+  "id": "333c3127-5c6d-42b4-aaaf-20fca3095fa5",
+  "href": "http://localhost/perrr-permission/tmf-api/partyRoleManagement/v4/partyRole/333c3127-5c6d-42b4-aaaf-20fca3095fa5",
+  "@schemaLocation": "http://localhost/perrr-permission/tmf-api/partyRoleManagement/v4/docs/#/",
+  "@type": "PartyRole",
+  "@baseType": "PartyRole"
+}
+Response for API POST request: {"name":"Acme Corporation - Supplier","engagedParty":{"id":"dummyAcmePartyId","href":"https://localhost/<RELEASE_NAME>-party/tmf-api/party/v4/organization/dummyAcmePartyId","name":"Acme Corporation - Party","role":"Supplier","@referredType":"organization"},"id":"333c3127-5c6d-42b4-aaaf-20fca3095fa5","href":"http://localhost/perrr-permission/tmf-api/partyRoleManagement/v4/partyRole/333c3127-5c6d-42b4-aaaf-20fca3095fa5","@schemaLocation":"http://localhost/perrr-permission/tmf-api/partyRoleManagement/v4/docs/#/","@type":"PartyRole","@baseType":"PartyRole"}
+✅ Dependent API Initialization successful! Returned ID: 333c3127-5c6d-42b4-aaaf-20fca3095fa5
+Tracking resource ID for cleanup: 333c3127-5c6d-42b4-aaaf-20fca3095fa5
+Dependent API partyRole initialized successfully.
+.Creating resource of type organization in API organization with targetPayload
+
+📌 Sending API Request: POST https://localhost/parrr-party/tmf-api/party/v4/organization {
+  "@type": "organization",
+  "name": "Coffee Do Brazil",
+  "tradingName": "Coffee Do Brazil Fair Trade",
+  "relatedParty": [
+    {
+      "id": "333c3127-5c6d-42b4-aaaf-20fca3095fa5",
+      "href": "http://localhost/perrr-permission/tmf-api/partyRoleManagement/v4/partyRole/333c3127-5c6d-42b4-aaaf-20fca3095fa5",
+      "role": "Supplier",
+      "name": "Coffee Do Brazil Supplier",
+      "@referredType": "partyRole"
+    }
+  ]
+}
+📌 Headers: {
+  "Accept": "application/json",
+  "Content-Type": "application/json"
+}
+
+✅ API Response [201]:
+{
+  "@type": "organization",
+  "name": "Coffee Do Brazil",
+  "tradingName": "Coffee Do Brazil Fair Trade",
+  "relatedParty": [
+    {
+      "id": "333c3127-5c6d-42b4-aaaf-20fca3095fa5",
+      "href": "http://localhost/perrr-permission/tmf-api/partyRoleManagement/v4/partyRole/333c3127-5c6d-42b4-aaaf-20fca3095fa5",
+      "role": "Supplier",
+      "name": "Coffee Do Brazil Supplier",
+      "@referredType": "partyRole"
+    }
+  ],
+  "id": "1e972d30-b9bf-4485-9bb9-1f931133c3ad",
+  "href": "https://localhost/parrr-party/tmf-api/party/v4/organization/1e972d30-b9bf-4485-9bb9-1f931133c3ad",
+  "@schemaLocation": "https://localhost/parrr-party/tmf-api/party/v4/docs/#/",
+  "@baseType": "Organization"
+}
+POST successful: {"@type":"organization","name":"Coffee Do Brazil","tradingName":"Coffee Do Brazil Fair Trade","relatedParty":[{"id":"333c3127-5c6d-42b4-aaaf-20fca3095fa5","href":"http://localhost/perrr-permission/tmf-api/partyRoleManagement/v4/partyRole/333c3127-5c6d-42b4-aaaf-20fca3095fa5","role":"Supplier","name":"Coffee Do Brazil Supplier","@referredType":"partyRole"}],"id":"1e972d30-b9bf-4485-9bb9-1f931133c3ad","href":"https://localhost/parrr-party/tmf-api/party/v4/organization/1e972d30-b9bf-4485-9bb9-1f931133c3ad","@schemaLocation":"https://localhost/parrr-party/tmf-api/party/v4/docs/#/","@baseType":"Organization"}
+Tracking resource ID for cleanup: 1e972d30-b9bf-4485-9bb9-1f931133c3ad
+.
+📌 Validating API response for createOrganization. Expected: success, Actual Status: 201
+Operation createOrganization validated successfully with status 201
+.Cleaning up created resources...
+Deleting resource: https://localhost/perrr-permission/tmf-api/partyRoleManagement/v4/partyRole/333c3127-5c6d-42b4-aaaf-20fca3095fa5
+
+📌 Sending API Request: DELETE https://localhost/perrr-permission/tmf-api/partyRoleManagement/v4/partyRole/333c3127-5c6d-42b4-aaaf-20fca3095fa5
+📌 Headers: {
+  "Accept": "application/json",
+  "Content-Type": "application/json"
+}
+
+✅ API Response [204]:
+""
+✅ Successfully deleted resource: 333c3127-5c6d-42b4-aaaf-20fca3095fa5
+Deleting resource: https://localhost/parrr-party/tmf-api/party/v4/organization/1e972d30-b9bf-4485-9bb9-1f931133c3ad
+
+📌 Sending API Request: DELETE https://localhost/parrr-party/tmf-api/party/v4/organization/1e972d30-b9bf-4485-9bb9-1f931133c3ad
+📌 Headers: {
+  "Accept": "application/json",
+  "Content-Type": "application/json"
+}
+
+✅ API Response [204]:
+""
+✅ Successfully deleted resource: 1e972d30-b9bf-4485-9bb9-1f931133c3ad
+.Feature tags: @tmfc028
+Component to run: tmfc028
+Running scenario: Test dependent API interactions with different payloads
+.✅ Extracted Exposed API URL: https://localhost/parrr-party/tmf-api/party/v4
+✅ Extracted Dependent API URL: https://localhost/perrr-permission/tmf-api/partyRoleManagement/v4
+Testing component: tmfc028
+Exposed API Base URL: https://localhost/parrr-party/tmf-api/party/v4
+Dependent API Base URL: https://localhost/perrr-permission/tmf-api/partyRoleManagement/v4
+.🔄 Checking if stub component is installed for dependent API 'permission'...
+.Initializing dependent API partyRole with basePayload
+Creating new resource via POST to: https://localhost/perrr-permission/tmf-api/partyRoleManagement/v4/partyRole
+
+📌 Sending API Request: POST https://localhost/perrr-permission/tmf-api/partyRoleManagement/v4/partyRole {
+  "name": "Acme Corporation - Supplier",
+  "engagedParty": {
+    "id": "dummyAcmePartyId",
+    "href": "https://localhost/<RELEASE_NAME>-party/tmf-api/party/v4/organization/dummyAcmePartyId",
+    "name": "Acme Corporation - Party",
+    "role": "Supplier",
+    "@referredType": "organization"
+  }
+}
+📌 Headers: {
+  "Accept": "application/json",
+  "Content-Type": "application/json"
+}
+
+✅ API Response [201]:
+{
+  "name": "Acme Corporation - Supplier",
+  "engagedParty": {
+    "id": "dummyAcmePartyId",
+    "href": "https://localhost/<RELEASE_NAME>-party/tmf-api/party/v4/organization/dummyAcmePartyId",
+    "name": "Acme Corporation - Party",
+    "role": "Supplier",
+    "@referredType": "organization"
+  },
+  "id": "b90a5eb2-3bf0-440c-a9fc-f525298f3902",
+  "href": "http://localhost/perrr-permission/tmf-api/partyRoleManagement/v4/partyRole/b90a5eb2-3bf0-440c-a9fc-f525298f3902",
+  "@schemaLocation": "http://localhost/perrr-permission/tmf-api/partyRoleManagement/v4/docs/#/",
+  "@type": "PartyRole",
+  "@baseType": "PartyRole"
+}
+Response for API POST request: {"name":"Acme Corporation - Supplier","engagedParty":{"id":"dummyAcmePartyId","href":"https://localhost/<RELEASE_NAME>-party/tmf-api/party/v4/organization/dummyAcmePartyId","name":"Acme Corporation - Party","role":"Supplier","@referredType":"organization"},"id":"b90a5eb2-3bf0-440c-a9fc-f525298f3902","href":"http://localhost/perrr-permission/tmf-api/partyRoleManagement/v4/partyRole/b90a5eb2-3bf0-440c-a9fc-f525298f3902","@schemaLocation":"http://localhost/perrr-permission/tmf-api/partyRoleManagement/v4/docs/#/","@type":"PartyRole","@baseType":"PartyRole"}
+✅ Dependent API Initialization successful! Returned ID: b90a5eb2-3bf0-440c-a9fc-f525298f3902
+Tracking resource ID for cleanup: b90a5eb2-3bf0-440c-a9fc-f525298f3902
+Dependent API partyRole initialized successfully.
+.Creating resource of type organization in API organization with targetPayload
+
+📌 Sending API Request: POST https://localhost/parrr-party/tmf-api/party/v4/organization {
+  "@type": "organization",
+  "name": "Coffee Do Brazil",
+  "tradingName": "Coffee Do Brazil Fair Trade",
+  "relatedParty": [
+    {
+      "id": "invalid-id",
+      "href": "invalid-href",
+      "role": "Supplier",
+      "name": "Coffee Do Brazil Supplier",
+      "@referredType": "partyRole"
+    }
+  ]
+}
+📌 Headers: {
+  "Accept": "application/json",
+  "Content-Type": "application/json"
+}
+❌ POST failed with status 422: [object Object]
+.
+📌 Validating API response for createOrganization. Expected: failure, Actual Status: 422
+.Cleaning up created resources...
+Deleting resource: https://localhost/perrr-permission/tmf-api/partyRoleManagement/v4/partyRole/b90a5eb2-3bf0-440c-a9fc-f525298f3902
+
+📌 Sending API Request: DELETE https://localhost/perrr-permission/tmf-api/partyRoleManagement/v4/partyRole/b90a5eb2-3bf0-440c-a9fc-f525298f3902
+📌 Headers: {
+  "Accept": "application/json",
+  "Content-Type": "application/json"
+}
+
+✅ API Response [204]:
+""
+✅ Successfully deleted resource: b90a5eb2-3bf0-440c-a9fc-f525298f3902
+.
+
+16 scenarios (14 skipped, 2 passed)
+80 steps (70 skipped, 10 passed)
+0m00.461s (executing steps: 0m00.427s)
+✅ Filtered JSON results saved successfully.
+
+🚀 Cucumber HTML report ..\resources\results\cucumber-bdd\results.html generated successfully 👍
+api id is: TMF632, and api version is: v4.0.0
+📌 Debug: API ID: TMF632, Full Version: v4.0.0, Major Version: v4
+apiRelease is now: TMF632_v4
+✅ Using file: ..\resources\results\api-ctk-results\TMF632_v4.json
+⚠️ No CTK result found for API TMF669 (Major Version: 4)
+⚠️ Warning: No matching CTK result found for TMF669_v4
+api id is: TMF669, and api version is: v4.0.0
+⚠️ No CTK result found for API TMF669 (Major Version: 4)
+⚠️ Warning: No matching CTK result found for TMF669 (4)
+attempting getting core function newman results
+api.apiName is TMF632 party management api - Mandatory and results path is ..\resources\results\api-ctk-results\TMF632_v4.json
+attempting getting security function newman results
+⚠️ Skipping Newman summary generation: No API results found.
+⚠️ Skipping Newman summary generation: No API results found.
+Got all newman results
+Found Canvas App Version: v1
+Found Kubernetes Version: v1.34.1
+Γ£à CTK execution complete.
+Press any key to continue . . .
+
+C:\Users\SergejP\Downloads\trash\TMFC028-project\TMFC028-project\TMFC028-PartyManagement\CTK\componentCTK\scripts>

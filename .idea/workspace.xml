@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3085e4be-decd-43a0-ab55-7e6c69785d81" name="Changes" comment="update readme">
+    <list default="true" id="3085e4be-decd-43a0-ab55-7e6c69785d81" name="Changes" comment="update party swagger.host to localhost">
+      <change afterPath="$PROJECT_DIR$/TMFC028-RI-implementation-description.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-DOCKERIZED/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-DOCKERIZED/index.js" afterDir="false" />
     </list>
-    <list id="a812486d-8ef9-4907-a832-44f0f7dd4073" name="do not commit" comment="do not commit">
-      <change beforePath="$PROJECT_DIR$/TMFC028-PartyManagement/CTK/componentCTK/CHANGE_ME.json" beforeDir="false" afterPath="$PROJECT_DIR$/TMFC028-PartyManagement/CTK/componentCTK/CHANGE_ME.json" afterDir="false" />
-    </list>
+    <list id="a812486d-8ef9-4907-a832-44f0f7dd4073" name="do not commit" comment="do not commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,7 +45,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/projects/tmf/oda ctk/TMFC028-project/dockerized-openapis",
+    "last_opened_file_path": "C:/projects/tmf/oda ctk/TMFC028-project",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -68,9 +66,9 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\projects\tmf\oda ctk\TMFC028-project" />
       <recent name="C:\projects\tmf\oda ctk\TMFC028-project\dockerized-openapis" />
       <recent name="C:\projects\tmf\oda ctk\TMFC028-project\productinventory--copied-from-akumartmf-productinventoryapi-docker-image" />
-      <recent name="C:\projects\tmf\oda ctk\TMFC028-project" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\projects\tmf\oda ctk\TMFC028-project\dockerized-openapis" />
@@ -135,7 +133,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1763998045588</updated>
-      <workItem from="1763998046544" duration="38583000" />
+      <workItem from="1763998046544" duration="41965000" />
     </task>
     <task id="LOCAL-00001" summary="interm commit">
       <option name="closed" value="true" />
@@ -273,7 +271,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764093210049</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="update party swagger.host to localhost">
+      <option name="closed" value="true" />
+      <created>1764107862793</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1764107862793</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,7 +310,8 @@
     <MESSAGE value="add original TMF openapis alongside dockerized ones" />
     <MESSAGE value="set &lt;RELEASE_NAME&gt; to  party-role-0001.json href" />
     <MESSAGE value="update readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="update readme" />
+    <MESSAGE value="update party swagger.host to localhost" />
+    <option name="LAST_COMMIT_MESSAGE" value="update party swagger.host to localhost" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
