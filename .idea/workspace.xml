@@ -4,92 +4,314 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3085e4be-decd-43a0-ab55-7e6c69785d81" name="Changes" comment="better error message  in validateRelatedPartyHref">
-      <change afterPath="$PROJECT_DIR$/TMFC035-PermissionsManagement-stub/README" afterDir="false" />
+    <list default="true" id="3085e4be-decd-43a0-ab55-7e6c69785d81" name="Changes" comment="reorg folders and update readmes">
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-ORIGINAL/.swagger-codegen/VERSION" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-ORIGINAL/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-ORIGINAL/api/swagger.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-ORIGINAL/controllers/EventsSubscription.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-ORIGINAL/controllers/Individual.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-ORIGINAL/controllers/NotificationListenersClientSide.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-ORIGINAL/controllers/Organization.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-ORIGINAL/index.html_replacement" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-ORIGINAL/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-ORIGINAL/manifest.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-ORIGINAL/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-ORIGINAL/service/EventsSubscriptionService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-ORIGINAL/service/IndividualService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-ORIGINAL/service/NotificationListenersClientSideService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-ORIGINAL/service/OrganizationService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-ORIGINAL/utils/mongoUtils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-ORIGINAL/utils/notificationUtils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-ORIGINAL/utils/operationsUtils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-ORIGINAL/utils/swaggerUtils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-DOCKERIZED/.swagger-codegen-ignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-DOCKERIZED/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-DOCKERIZED/utils/errorUtils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-DOCKERIZED/utils/operations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-DOCKERIZED/utils/ruleUtils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-DOCKERIZED/utils/rules.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-DOCKERIZED/utils/writer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-ORIGINAL/.swagger-codegen-ignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-ORIGINAL/.swagger-codegen/VERSION" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-ORIGINAL/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-ORIGINAL/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-ORIGINAL/api/swagger.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-ORIGINAL/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-ORIGINAL/controllers/EventsSubscription.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-ORIGINAL/controllers/NotificationListenersClientSide.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-ORIGINAL/controllers/Permission.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-ORIGINAL/controllers/UserRole.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-ORIGINAL/index.html_replacement" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-ORIGINAL/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-ORIGINAL/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-ORIGINAL/service/EventsSubscriptionService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-ORIGINAL/service/NotificationListenersClientSideService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-ORIGINAL/service/PermissionService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-ORIGINAL/service/UserRoleService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-ORIGINAL/utils/errorUtils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-ORIGINAL/utils/mongoUtils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-ORIGINAL/utils/notificationUtils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-ORIGINAL/utils/operations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-ORIGINAL/utils/operationsUtils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-ORIGINAL/utils/ruleUtils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-ORIGINAL/utils/rules.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-ORIGINAL/utils/swaggerUtils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-ORIGINAL/utils/writer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ODA-spec/TMFC028-PartyManagement.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ODA-specs/TMFC028-PartyManagement.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ODA-spec/TMFC035-PermissionsManagement.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ODA-specs/TMFC035-PermissionsManagement.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ODA-spec/oda-component-crd.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ODA-specs/oda-component-crd.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ODA-spec/oda-component-oas-v1.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ODA-specs/oda-component-oas-v1.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README-running-ctk-on-TMFC028-RI-and-TMFC035-RI" beforeDir="false" afterPath="$PROJECT_DIR$/README-running-ctk-on-TMFC028-RI-and-TMFC035-RI" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF632_Party/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/.dockerignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF632_Party/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF632_Party/.swagger-codegen-ignore" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/.swagger-codegen-ignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF632_Party/.swagger-codegen/VERSION" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/.swagger-codegen/VERSION" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF632_Party/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF632_Party/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF632_Party/api/swagger.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/api/swagger.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF632_Party/builddockerfile.sh" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/builddockerfile.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF632_Party/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF632_Party/controllers/EventsSubscription.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/controllers/EventsSubscription.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF632_Party/controllers/Individual.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/controllers/Individual.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF632_Party/controllers/NotificationListenersClientSide.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/controllers/NotificationListenersClientSide.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF632_Party/controllers/Organization.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/controllers/Organization.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF632_Party/index.html_replacement" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/index.html_replacement" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF632_Party/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF632_Party/manifest.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/manifest.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF632_Party/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF632_Party/service/EventsSubscriptionService.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/service/EventsSubscriptionService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF632_Party/service/IndividualService.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/service/IndividualService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF632_Party/service/NotificationListenersClientSideService.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/service/NotificationListenersClientSideService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF632_Party/service/OrganizationService.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/service/OrganizationService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF632_Party/utils/entrypoint.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/utils/entrypoint.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF632_Party/utils/errorUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/utils/errorUtils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF632_Party/utils/mongoUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/utils/mongoUtils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF632_Party/utils/notificationUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/utils/notificationUtils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF632_Party/utils/operations.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/utils/operations.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF632_Party/utils/operationsUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/utils/operationsUtils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF632_Party/utils/ruleUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/utils/ruleUtils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF632_Party/utils/rules.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/utils/rules.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF632_Party/utils/swaggerUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/utils/swaggerUtils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF632_Party/utils/writer.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/utils/writer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/.dockerignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/.swagger-codegen-ignore" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/.swagger-codegen-ignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/.swagger-codegen/VERSION" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/.swagger-codegen/VERSION" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/api/swagger.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/api/swagger.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/builddockerfile.sh" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/builddockerfile.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/controllers/EventsSubscription.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/controllers/EventsSubscription.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/controllers/NotificationListenersClientSide.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/controllers/NotificationListenersClientSide.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/controllers/Permission.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/controllers/Permission.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/controllers/UserRole.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/controllers/UserRole.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/index.html_replacement" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/index.html_replacement" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/manifest.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/manifest.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/service/EventsSubscriptionService.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/service/EventsSubscriptionService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/service/NotificationListenersClientSideService.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/service/NotificationListenersClientSideService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/service/PermissionService.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/service/PermissionService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/service/UserRoleService.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/service/UserRoleService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/utils/entrypoint.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/utils/entrypoint.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/utils/errorUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/utils/errorUtils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/utils/mongoUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/utils/mongoUtils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/utils/notificationUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/utils/notificationUtils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/utils/operations.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/utils/operations.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/utils/operationsUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/utils/operationsUtils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/utils/ruleUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/utils/ruleUtils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/utils/rules.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/utils/rules.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/utils/swaggerUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/utils/swaggerUtils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/utils/writer.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/utils/writer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TMFC028-PartyManagement/CTK/componentCTK/CHANGE_ME.json" beforeDir="false" afterPath="$PROJECT_DIR$/TMFC028-PartyManagement/CTK/componentCTK/CHANGE_ME.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMFC035-PermissionsManagement/CTK/ComponentRI/Chart.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/TMFC035-PermissionsManagement-stub/CTK/ComponentRI/Chart.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMFC035-PermissionsManagement/CTK/ComponentRI/templates/_helpers.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/TMFC035-PermissionsManagement-stub/CTK/ComponentRI/templates/_helpers.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMFC035-PermissionsManagement/CTK/ComponentRI/templates/component-permissionmanagement.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/TMFC035-PermissionsManagement-stub/CTK/ComponentRI/templates/component-permissionmanagement.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMFC035-PermissionsManagement/CTK/ComponentRI/templates/cronjob-roleinitialization.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/TMFC035-PermissionsManagement-stub/CTK/ComponentRI/templates/cronjob-roleinitialization.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMFC035-PermissionsManagement/CTK/ComponentRI/templates/deployment-corepartyroleapi.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/TMFC035-PermissionsManagement-stub/CTK/ComponentRI/templates/deployment-corepartyroleapi.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMFC035-PermissionsManagement/CTK/ComponentRI/templates/deployment-mongodb.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/TMFC035-PermissionsManagement-stub/CTK/ComponentRI/templates/deployment-mongodb.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMFC035-PermissionsManagement/CTK/ComponentRI/templates/deployment-partyroleapi.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/TMFC035-PermissionsManagement-stub/CTK/ComponentRI/templates/deployment-partyroleapi.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMFC035-PermissionsManagement/CTK/ComponentRI/templates/deployment-userrolepermissionapi.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/TMFC035-PermissionsManagement-stub/CTK/ComponentRI/templates/deployment-userrolepermissionapi.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMFC035-PermissionsManagement/CTK/ComponentRI/templates/persistentVolumeClaim-mongodb.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/TMFC035-PermissionsManagement-stub/CTK/ComponentRI/templates/persistentVolumeClaim-mongodb.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMFC035-PermissionsManagement/CTK/ComponentRI/templates/service-corepartyroleapi.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/TMFC035-PermissionsManagement-stub/CTK/ComponentRI/templates/service-corepartyroleapi.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMFC035-PermissionsManagement/CTK/ComponentRI/templates/service-mongodb.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/TMFC035-PermissionsManagement-stub/CTK/ComponentRI/templates/service-mongodb.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMFC035-PermissionsManagement/CTK/ComponentRI/templates/service-partyroleapi.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/TMFC035-PermissionsManagement-stub/CTK/ComponentRI/templates/service-partyroleapi.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMFC035-PermissionsManagement/CTK/ComponentRI/templates/service-userrolepermissionapi.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/TMFC035-PermissionsManagement-stub/CTK/ComponentRI/templates/service-userrolepermissionapi.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMFC035-PermissionsManagement/CTK/ComponentRI/templates/tests/test-connection.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/TMFC035-PermissionsManagement-stub/CTK/ComponentRI/templates/tests/test-connection.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMFC035-PermissionsManagement/CTK/ComponentRI/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/TMFC035-PermissionsManagement-stub/CTK/ComponentRI/values.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-DOCKERIZED/.dockerignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-DOCKERIZED/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/.swagger-codegen-ignore" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-DOCKERIZED/.swagger-codegen-ignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/.swagger-codegen/VERSION" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-DOCKERIZED/.swagger-codegen/VERSION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-DOCKERIZED/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-DOCKERIZED/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/api/swagger.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-DOCKERIZED/api/swagger.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/builddockerfile.sh" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-DOCKERIZED/builddockerfile.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-DOCKERIZED/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/controllers/EventsSubscription.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-DOCKERIZED/controllers/EventsSubscription.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/controllers/Individual.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-DOCKERIZED/controllers/Individual.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/controllers/NotificationListenersClientSide.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-DOCKERIZED/controllers/NotificationListenersClientSide.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/controllers/Organization.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-DOCKERIZED/controllers/Organization.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/index.html_replacement" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-DOCKERIZED/index.html_replacement" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-DOCKERIZED/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/manifest.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-DOCKERIZED/manifest.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-DOCKERIZED/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/service/EventsSubscriptionService.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-DOCKERIZED/service/EventsSubscriptionService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/service/IndividualService.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-DOCKERIZED/service/IndividualService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/service/NotificationListenersClientSideService.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-DOCKERIZED/service/NotificationListenersClientSideService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/service/OrganizationService.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-DOCKERIZED/service/OrganizationService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/utils/entrypoint.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-DOCKERIZED/utils/entrypoint.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/utils/errorUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-DOCKERIZED/utils/errorUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/utils/mongoUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-DOCKERIZED/utils/mongoUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/utils/notificationUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-DOCKERIZED/utils/notificationUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/utils/operations.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-DOCKERIZED/utils/operations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/utils/operationsUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-DOCKERIZED/utils/operationsUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/utils/ruleUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-DOCKERIZED/utils/ruleUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/utils/rules.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-DOCKERIZED/utils/rules.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/utils/swaggerUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-DOCKERIZED/utils/swaggerUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/utils/writer.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-DOCKERIZED/utils/writer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-DOCKERIZED/.dockerignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-DOCKERIZED/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/.swagger-codegen-ignore" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-ORIGINAL/.swagger-codegen-ignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/.swagger-codegen/VERSION" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-DOCKERIZED/.swagger-codegen/VERSION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-DOCKERIZED/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-DOCKERIZED/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/api/swagger.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-DOCKERIZED/api/swagger.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/builddockerfile.sh" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-DOCKERIZED/builddockerfile.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-ORIGINAL/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/controllers/EventsSubscription.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-DOCKERIZED/controllers/EventsSubscription.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/controllers/NotificationListenersClientSide.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-DOCKERIZED/controllers/NotificationListenersClientSide.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/controllers/Permission.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-DOCKERIZED/controllers/Permission.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/controllers/UserRole.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-DOCKERIZED/controllers/UserRole.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/index.html_replacement" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-DOCKERIZED/index.html_replacement" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-DOCKERIZED/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/manifest.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-DOCKERIZED/manifest.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-DOCKERIZED/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/service/EventsSubscriptionService.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-DOCKERIZED/service/EventsSubscriptionService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/service/NotificationListenersClientSideService.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-DOCKERIZED/service/NotificationListenersClientSideService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/service/PermissionService.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-DOCKERIZED/service/PermissionService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/service/UserRoleService.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-DOCKERIZED/service/UserRoleService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/utils/entrypoint.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-DOCKERIZED/utils/entrypoint.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/utils/errorUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-ORIGINAL/utils/errorUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/utils/mongoUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-DOCKERIZED/utils/mongoUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/utils/notificationUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-DOCKERIZED/utils/notificationUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/utils/operations.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-ORIGINAL/utils/operations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/utils/operationsUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-DOCKERIZED/utils/operationsUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/utils/ruleUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-ORIGINAL/utils/ruleUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/utils/rules.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-ORIGINAL/utils/rules.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/utils/swaggerUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission_v4.0-DOCKERIZED/utils/swaggerUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/utils/writer.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-ORIGINAL/utils/writer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMF669_PartyRole/.dockerignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMF669_PartyRole/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMF669_PartyRole/.swagger-codegen-ignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMF669_PartyRole/.swagger-codegen/VERSION" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMF669_PartyRole/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMF669_PartyRole/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMF669_PartyRole/README2.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMF669_PartyRole/api/swagger.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMF669_PartyRole/builddockerfile.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMF669_PartyRole/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMF669_PartyRole/controllers/EventsSubscription.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMF669_PartyRole/controllers/NotificationListenersClientSide.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMF669_PartyRole/controllers/PartyRole.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMF669_PartyRole/index.html_replacement" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMF669_PartyRole/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMF669_PartyRole/manifest.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMF669_PartyRole/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMF669_PartyRole/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMF669_PartyRole/service/EventsSubscriptionService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMF669_PartyRole/service/NotificationListenersClientSideService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMF669_PartyRole/service/PartyRoleService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMF669_PartyRole/utils/entrypoint.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMF669_PartyRole/utils/errorUtils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMF669_PartyRole/utils/mongoUtils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMF669_PartyRole/utils/notificationUtils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMF669_PartyRole/utils/operations.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMF669_PartyRole/utils/operationsUtils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMF669_PartyRole/utils/ruleUtils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMF669_PartyRole/utils/rules.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMF669_PartyRole/utils/swaggerUtils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMF669_PartyRole/utils/writer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC-PARTYROLE-STUB-FOR-TMF669/CTK/ComponentRI/Chart.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC-PARTYROLE-STUB-FOR-TMF669/CTK/ComponentRI/templates/_helpers.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC-PARTYROLE-STUB-FOR-TMF669/CTK/ComponentRI/templates/component-partyrolemanagement.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC-PARTYROLE-STUB-FOR-TMF669/CTK/ComponentRI/templates/cronjob-securityroleinitialization.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC-PARTYROLE-STUB-FOR-TMF669/CTK/ComponentRI/templates/deployment-mongodb.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC-PARTYROLE-STUB-FOR-TMF669/CTK/ComponentRI/templates/deployment-nonsecuritypartyroleapi.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC-PARTYROLE-STUB-FOR-TMF669/CTK/ComponentRI/templates/deployment-securitypartyroleapi.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC-PARTYROLE-STUB-FOR-TMF669/CTK/ComponentRI/templates/persistentVolumeClaim-mongodb.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC-PARTYROLE-STUB-FOR-TMF669/CTK/ComponentRI/templates/service-mongodb.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC-PARTYROLE-STUB-FOR-TMF669/CTK/ComponentRI/templates/service-nonsecuritypartyroleapi.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC-PARTYROLE-STUB-FOR-TMF669/CTK/ComponentRI/templates/service-securitypartyroleapi.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC-PARTYROLE-STUB-FOR-TMF669/CTK/ComponentRI/templates/tests/test-connection.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC-PARTYROLE-STUB-FOR-TMF669/CTK/ComponentRI/values.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC005-ProductInventory_componentri/CTK/ComponentRI/Chart.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC005-ProductInventory_componentri/CTK/ComponentRI/templates/_helpers.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC005-ProductInventory_componentri/CTK/ComponentRI/templates/component-productinventory.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC005-ProductInventory_componentri/CTK/ComponentRI/templates/cronjob-roleinitialization.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC005-ProductInventory_componentri/CTK/ComponentRI/templates/deployment-metricsapi.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC005-ProductInventory_componentri/CTK/ComponentRI/templates/deployment-mongodb.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC005-ProductInventory_componentri/CTK/ComponentRI/templates/deployment-partyroleapi.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC005-ProductInventory_componentri/CTK/ComponentRI/templates/deployment-productinventoryapi.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC005-ProductInventory_componentri/CTK/ComponentRI/templates/persistentVolumeClaim-mongodb.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC005-ProductInventory_componentri/CTK/ComponentRI/templates/service-mongodb.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC005-ProductInventory_componentri/CTK/ComponentRI/templates/service-partyroleapi.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC005-ProductInventory_componentri/CTK/ComponentRI/templates/service-productinventoryapi.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC005-ProductInventory_componentri/CTK/ComponentRI/templates/service-registerallevents.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC005-ProductInventory_componentri/CTK/ComponentRI/templates/tests/test-connection.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC005-ProductInventory_componentri/CTK/ComponentRI/values.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC012-ResourceInventory_componentri/CTK/ComponentRI/Chart.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC012-ResourceInventory_componentri/CTK/ComponentRI/templates/_helpers.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC012-ResourceInventory_componentri/CTK/ComponentRI/templates/component-resourceinventory.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC012-ResourceInventory_componentri/CTK/ComponentRI/templates/cronjob-roleinitialization.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC012-ResourceInventory_componentri/CTK/ComponentRI/templates/deployment-mongodb.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC012-ResourceInventory_componentri/CTK/ComponentRI/templates/deployment-resourceinventoryapi.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC012-ResourceInventory_componentri/CTK/ComponentRI/templates/persistentVolumeClaim-mongodb.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC012-ResourceInventory_componentri/CTK/ComponentRI/templates/service-mongodb.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC012-ResourceInventory_componentri/CTK/ComponentRI/templates/service-resourceinventoryapi.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC012-ResourceInventory_componentri/CTK/ComponentRI/templates/tests/test-connection.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC012-ResourceInventory_componentri/CTK/ComponentRI/values.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC012-ResourceInventory_componentri/app/.dockerignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC012-ResourceInventory_componentri/app/.swagger-codegen-ignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC012-ResourceInventory_componentri/app/.swagger-codegen/VERSION" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC012-ResourceInventory_componentri/app/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC012-ResourceInventory_componentri/app/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC012-ResourceInventory_componentri/app/api/swagger.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC012-ResourceInventory_componentri/app/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC012-ResourceInventory_componentri/app/controllers/EventsSubscription.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC012-ResourceInventory_componentri/app/controllers/NotificationListenersClientSide.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC012-ResourceInventory_componentri/app/controllers/Resource.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC012-ResourceInventory_componentri/app/index.html_replacement" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC012-ResourceInventory_componentri/app/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC012-ResourceInventory_componentri/app/manifest.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC012-ResourceInventory_componentri/app/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC012-ResourceInventory_componentri/app/service/EventsSubscriptionService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC012-ResourceInventory_componentri/app/service/NotificationListenersClientSideService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC012-ResourceInventory_componentri/app/service/ResourceService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC012-ResourceInventory_componentri/app/utils/entryPoint.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC012-ResourceInventory_componentri/app/utils/errorUtils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC012-ResourceInventory_componentri/app/utils/mongoUtils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC012-ResourceInventory_componentri/app/utils/notificationUtils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC012-ResourceInventory_componentri/app/utils/operations.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC012-ResourceInventory_componentri/app/utils/operationsUtils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC012-ResourceInventory_componentri/app/utils/ruleUtils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC012-ResourceInventory_componentri/app/utils/rules.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC012-ResourceInventory_componentri/app/utils/swaggerUtils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/TMFC012-ResourceInventory_componentri/app/utils/writer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/partyrole---copied-from-lesterthomas-partyroleapi-docker-image/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/partyrole---copied-from-lesterthomas-partyroleapi-docker-image/src/.dockerignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/partyrole---copied-from-lesterthomas-partyroleapi-docker-image/src/.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/partyrole---copied-from-lesterthomas-partyroleapi-docker-image/src/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/partyrole---copied-from-lesterthomas-partyroleapi-docker-image/src/.swagger-codegen-ignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/partyrole---copied-from-lesterthomas-partyroleapi-docker-image/src/.swagger-codegen/VERSION" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/partyrole---copied-from-lesterthomas-partyroleapi-docker-image/src/.vscode/launch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/partyrole---copied-from-lesterthomas-partyroleapi-docker-image/src/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/partyrole---copied-from-lesterthomas-partyroleapi-docker-image/src/.vscode/tasks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/partyrole---copied-from-lesterthomas-partyroleapi-docker-image/src/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/partyrole---copied-from-lesterthomas-partyroleapi-docker-image/src/api/swagger.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/partyrole---copied-from-lesterthomas-partyroleapi-docker-image/src/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/partyrole---copied-from-lesterthomas-partyroleapi-docker-image/src/controllers/EventsSubscription.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/partyrole---copied-from-lesterthomas-partyroleapi-docker-image/src/controllers/NotificationListenersClientSide.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/partyrole---copied-from-lesterthomas-partyroleapi-docker-image/src/controllers/PartyRole.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/partyrole---copied-from-lesterthomas-partyroleapi-docker-image/src/index.html_replacement" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/partyrole---copied-from-lesterthomas-partyroleapi-docker-image/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/partyrole---copied-from-lesterthomas-partyroleapi-docker-image/src/manifest.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/partyrole---copied-from-lesterthomas-partyroleapi-docker-image/src/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/partyrole---copied-from-lesterthomas-partyroleapi-docker-image/src/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/partyrole---copied-from-lesterthomas-partyroleapi-docker-image/src/service/EventsSubscriptionService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/partyrole---copied-from-lesterthomas-partyroleapi-docker-image/src/service/NotificationListenersClientSideService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/partyrole---copied-from-lesterthomas-partyroleapi-docker-image/src/service/PartyRoleService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/partyrole---copied-from-lesterthomas-partyroleapi-docker-image/src/utils/entrypoint.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/partyrole---copied-from-lesterthomas-partyroleapi-docker-image/src/utils/errorUtils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/partyrole---copied-from-lesterthomas-partyroleapi-docker-image/src/utils/mongoUtils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/partyrole---copied-from-lesterthomas-partyroleapi-docker-image/src/utils/notificationUtils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/partyrole---copied-from-lesterthomas-partyroleapi-docker-image/src/utils/operations.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/partyrole---copied-from-lesterthomas-partyroleapi-docker-image/src/utils/operationsUtils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/partyrole---copied-from-lesterthomas-partyroleapi-docker-image/src/utils/ruleUtils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/partyrole---copied-from-lesterthomas-partyroleapi-docker-image/src/utils/rules.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/partyrole---copied-from-lesterthomas-partyroleapi-docker-image/src/utils/swaggerUtils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/partyrole---copied-from-lesterthomas-partyroleapi-docker-image/src/utils/writer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productinventory--copied-from-akumartmf-productinventoryapi-docker-image/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productinventory--copied-from-akumartmf-productinventoryapi-docker-image/app/.dockerignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productinventory--copied-from-akumartmf-productinventoryapi-docker-image/app/.swagger-codegen-ignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productinventory--copied-from-akumartmf-productinventoryapi-docker-image/app/.swagger-codegen/VERSION" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productinventory--copied-from-akumartmf-productinventoryapi-docker-image/app/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productinventory--copied-from-akumartmf-productinventoryapi-docker-image/app/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productinventory--copied-from-akumartmf-productinventoryapi-docker-image/app/api/swagger.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productinventory--copied-from-akumartmf-productinventoryapi-docker-image/app/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productinventory--copied-from-akumartmf-productinventoryapi-docker-image/app/controllers/EventsSubscription.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productinventory--copied-from-akumartmf-productinventoryapi-docker-image/app/controllers/NotificationListenersClientSide.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productinventory--copied-from-akumartmf-productinventoryapi-docker-image/app/controllers/Product.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productinventory--copied-from-akumartmf-productinventoryapi-docker-image/app/index.html_replacement" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productinventory--copied-from-akumartmf-productinventoryapi-docker-image/app/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productinventory--copied-from-akumartmf-productinventoryapi-docker-image/app/manifest.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productinventory--copied-from-akumartmf-productinventoryapi-docker-image/app/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productinventory--copied-from-akumartmf-productinventoryapi-docker-image/app/service/EventsSubscriptionService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productinventory--copied-from-akumartmf-productinventoryapi-docker-image/app/service/NotificationListenersClientSideService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productinventory--copied-from-akumartmf-productinventoryapi-docker-image/app/service/ProductService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productinventory--copied-from-akumartmf-productinventoryapi-docker-image/app/utils/entryPoint.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productinventory--copied-from-akumartmf-productinventoryapi-docker-image/app/utils/errorUtils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productinventory--copied-from-akumartmf-productinventoryapi-docker-image/app/utils/mongoUtils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productinventory--copied-from-akumartmf-productinventoryapi-docker-image/app/utils/notificationUtils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productinventory--copied-from-akumartmf-productinventoryapi-docker-image/app/utils/operations.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productinventory--copied-from-akumartmf-productinventoryapi-docker-image/app/utils/operationsUtils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productinventory--copied-from-akumartmf-productinventoryapi-docker-image/app/utils/ruleUtils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productinventory--copied-from-akumartmf-productinventoryapi-docker-image/app/utils/rules.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productinventory--copied-from-akumartmf-productinventoryapi-docker-image/app/utils/swaggerUtils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productinventory--copied-from-akumartmf-productinventoryapi-docker-image/app/utils/writer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productorder-akumar_013_ODA_RI-copy-from-docker-gui/app/.dockerignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productorder-akumar_013_ODA_RI-copy-from-docker-gui/app/.swagger-codegen-ignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productorder-akumar_013_ODA_RI-copy-from-docker-gui/app/.swagger-codegen/VERSION" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productorder-akumar_013_ODA_RI-copy-from-docker-gui/app/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productorder-akumar_013_ODA_RI-copy-from-docker-gui/app/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productorder-akumar_013_ODA_RI-copy-from-docker-gui/app/api/swagger.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productorder-akumar_013_ODA_RI-copy-from-docker-gui/app/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productorder-akumar_013_ODA_RI-copy-from-docker-gui/app/controllers/CancelProductOrder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productorder-akumar_013_ODA_RI-copy-from-docker-gui/app/controllers/EventsSubscription.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productorder-akumar_013_ODA_RI-copy-from-docker-gui/app/controllers/NotificationListenersClientSide.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productorder-akumar_013_ODA_RI-copy-from-docker-gui/app/controllers/ProductOrder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productorder-akumar_013_ODA_RI-copy-from-docker-gui/app/index.html_replacement" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productorder-akumar_013_ODA_RI-copy-from-docker-gui/app/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productorder-akumar_013_ODA_RI-copy-from-docker-gui/app/manifest.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productorder-akumar_013_ODA_RI-copy-from-docker-gui/app/service/CancelProductOrderService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productorder-akumar_013_ODA_RI-copy-from-docker-gui/app/service/EventsSubscriptionService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productorder-akumar_013_ODA_RI-copy-from-docker-gui/app/service/NotificationListenersClientSideService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productorder-akumar_013_ODA_RI-copy-from-docker-gui/app/service/ProductOrderService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productorder-akumar_013_ODA_RI-copy-from-docker-gui/app/utils/entrypoint.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productorder-akumar_013_ODA_RI-copy-from-docker-gui/app/utils/errorUtils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productorder-akumar_013_ODA_RI-copy-from-docker-gui/app/utils/mongoUtils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productorder-akumar_013_ODA_RI-copy-from-docker-gui/app/utils/notificationUtils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productorder-akumar_013_ODA_RI-copy-from-docker-gui/app/utils/operations.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productorder-akumar_013_ODA_RI-copy-from-docker-gui/app/utils/operationsUtils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productorder-akumar_013_ODA_RI-copy-from-docker-gui/app/utils/ruleUtils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productorder-akumar_013_ODA_RI-copy-from-docker-gui/app/utils/rules.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productorder-akumar_013_ODA_RI-copy-from-docker-gui/app/utils/swaggerUtils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/productorder-akumar_013_ODA_RI-copy-from-docker-gui/app/utils/writer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/scratchpad/deployment-partyapi.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/scratchpad/noprobe/component-partymanagement.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/scratchpad/noprobe/deployment-partyapi.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/scratchpad/sergejp-tmf-pull-robot-secret.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/useful-commands.MD" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +349,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/projects/tmf/oda ctk/TMFC028-project/productinventory--copied-from-akumartmf-productinventoryapi-docker-image",
+    "last_opened_file_path": "C:/projects/tmf/oda ctk/TMFC028-project/dockerized-openapis",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -143,6 +365,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\projects\tmf\oda ctk\TMFC028-project\dockerized-openapis" />
       <recent name="C:\projects\tmf\oda ctk\TMFC028-project\productinventory--copied-from-akumartmf-productinventoryapi-docker-image" />
       <recent name="C:\projects\tmf\oda ctk\TMFC028-project" />
     </key>
@@ -208,7 +431,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1763998045588</updated>
-      <workItem from="1763998046544" duration="26158000" />
+      <workItem from="1763998046544" duration="28054000" />
     </task>
     <task id="LOCAL-00001" summary="interm commit">
       <option name="closed" value="true" />
@@ -306,7 +529,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764058545455</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="reorg folders and update readmes">
+      <option name="closed" value="true" />
+      <created>1764080168675</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1764080168675</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,7 +565,8 @@
     <MESSAGE value="update useful cmds" />
     <MESSAGE value="idea" />
     <MESSAGE value="better error message  in validateRelatedPartyHref" />
-    <option name="LAST_COMMIT_MESSAGE" value="better error message  in validateRelatedPartyHref" />
+    <MESSAGE value="reorg folders and update readmes" />
+    <option name="LAST_COMMIT_MESSAGE" value="reorg folders and update readmes" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

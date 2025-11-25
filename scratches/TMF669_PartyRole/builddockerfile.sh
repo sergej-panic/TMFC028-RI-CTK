@@ -1,1 +1,0 @@
-docker build . -t cr.marand.si/sergejp/tmf/partyroleapi:0.1
