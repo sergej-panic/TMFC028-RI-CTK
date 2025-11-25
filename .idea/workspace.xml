@@ -7,6 +7,10 @@
     <list default="true" id="3085e4be-decd-43a0-ab55-7e6c69785d81" name="Changes" comment="initial commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README-running-ctk-on-TMFC028-RI-and-TMFC035-RI" beforeDir="false" afterPath="$PROJECT_DIR$/README-running-ctk-on-TMFC028-RI-and-TMFC035-RI" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF632_Party/utils/ruleUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/TMF632_Party/utils/ruleUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMFC028-PartyManagement/CTK/componentCTK/CHANGE_ME.json" beforeDir="false" afterPath="$PROJECT_DIR$/TMFC028-PartyManagement/CTK/componentCTK/CHANGE_ME.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMFC028-PartyManagement/CTK/componentCTK/src/features/TMFC028_ProductInventory.feature" beforeDir="false" afterPath="$PROJECT_DIR$/TMFC028-PartyManagement/CTK/componentCTK/src/features/TMFC028_ProductInventory.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratches/useful-commands.MD" beforeDir="false" afterPath="$PROJECT_DIR$/scratches/useful-commands.MD" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +127,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1763998045588</updated>
-      <workItem from="1763998046544" duration="6961000" />
+      <workItem from="1763998046544" duration="14825000" />
     </task>
     <task id="LOCAL-00001" summary="interm commit">
       <option name="closed" value="true" />
@@ -173,7 +177,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764021484904</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1764022282930</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1764022282930</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
