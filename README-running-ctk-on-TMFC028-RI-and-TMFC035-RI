@@ -45,11 +45,12 @@ Note:
 
 8.) cmd> kubectl get dependentapis -n components
 
-    You should see that the par-party component still does not have its dependent API in READY=true status, and the per-permission component does not either.
+    You should see that the par-party component still does not have its dependent API in READY=true status.
 
-    NAME                                  READY   AGE   SVCINVID   URL
-    par-party-party-role-management-api           18m
-    per-permission-party-management-api           18m
+    C:\projects\tmf\oda ctk\TMFC028-project\TMFC028-PartyManagement\CTK\componentCTK\scripts>kubectl get dependentapis -n components
+    NAME                                  READY   AGE   SVCINVID                               URL
+    par-party-party-role-management-api           55s
+    per-permission-party-management-api   true    6s    3755f127-19a4-429f-afcc-75befecbaa1f   https://localhost/par-party/tmf-api/party/v4
 
 9.) The reason why party component has it dependent api not yet in status READ=true, is that there is a circular dependency between TMFC028 and TMFC035.
     You must restart the canvas-depapi-op deployment, so that it resolves this cycle.
