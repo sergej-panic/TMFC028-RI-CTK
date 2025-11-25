@@ -3,71 +3,109 @@
 #################################################################
 
 Note:
-- tested and working on Canvas version 1.2.4-AK1, Kubernetes core APIs: v1.34.1)
+- tested and working on Canvas version 1.2.4-AK1, Kubernetes core APIs: v1.34.1), windows OS
 - "cmd>" represents a command line
 - "<projectFolder>"" refers to the folder where the curent README file resides
 
 
 ############# First: Deploy the TMFC028 and TMFC035 components to the ODA canvas. #############
 
-1.) cmd> cd <projectFolder>\TMFC028-PartyManagement\CTK\ComponentRI
+1.) Open CMD terminal and navigate to the TMFC028 Party ComponentRI folder.
 
-2.) cmd> helm install par . -n components
+    cmd> cd <projectFolder>\TMFC028-PartyManagement\CTK\ComponentRI
 
-3.) cmd> kubectl get exposedapis -n components
+2.) Install the Party component onto the oda-canvas. Let's use "par" as the release name.
 
-    You should see this:
+    cmd> helm install par . -n components
+
+3.) The par-party component will not fully deploy, but get stuck in "In-Progress-CompCon" status.
+    It is waiting for the dependendent partyRole api from the TMFC025 component to become available.
+
+    cmd> kubectl get components -n components
+
+    NAME        DEPLOYMENT_STATUS
+    par-party   In-Progress-CompCon
+
+4.) The par-party component exposed apis are in "ready" state.
+
+    cmd> kubectl get exposedapis -n components
 
     NAME                             API_ENDPOINT                                   IMPLEMENTATION_READY
     par-party-party-management-api   https://localhost/par-party/tmf-api/party/v4   true
 
-4.) cmd> kubectl get dependentapis -n components
+5.) The par-party component dependent apis are NOT in "ready" status.
+    The par-party component does not have its dependent api in the READY=true state.
+    It is waiting for the dependendent partyRole api from the TMFC035 Persmission component to become ready.
 
-    You should see that the par-party component does not have its dependent api in READY=true status
+    cmd> kubectl get dependentapis -n components
 
     NAME                                  READY   AGE   SVCINVID   URL
     par-party-party-role-management-api           25s
 
 
-5.) cmd> cd <projectFolder>\TMFC035-PermissionsManagement\CTK\ComponentRI
+6.) Navigate to the TMFC035 Permission ComponentRI folder.
 
-6.) cmd> helm install per . -n components
+    cmd> cd <projectFolder>\TMFC035-PermissionsManagement\CTK\ComponentRI
+
+7.) Install the Permission component onto the oda-canvas. Let's use "per" as the release name.
+
+    cmd> helm install per . -n components
+
+8.) The per-permission component will fully deploy, with status "Complete".
+    It is waiting for the dependendent party api from the TMFC028 component to become ready.
+    The per-party still remains in status "In-Progress-DepApi"
+
+    cmd> kubectl get components -n components
+
+    NAME             DEPLOYMENT_STATUS
+    par-party        In-Progress-DepApi
+    per-permission   Complete
 
 
-7.) cmd> kubectl get exposedapis -n components
+9.) The per-permission component exposed apis are in "ready" status.
 
-    You should see:
+    cmd> kubectl get exposedapis -n components
 
     NAME                                                API_ENDPOINT                                                      IMPLEMENTATION_READY
     par-party-party-management-api                      https://localhost/par-party/tmf-api/party/v4                      true
     per-permission-party-role-management-api            https://localhost/per-permission/tmf-api/partyRoleManagement/v4   true
     per-permission-userrole-permission-management-api   https://localhost/per-permission/userrolepermission/v4            true
 
-8.) cmd> kubectl get dependentapis -n components
+10.) The per-permission component dependent apis are in "ready" status.
 
-    You should see that the par-party component still does not have its dependent API in READY=true status.
+    cmd> kubectl get dependentapis -n components
 
-    C:\projects\tmf\oda ctk\TMFC028-project\TMFC028-PartyManagement\CTK\componentCTK\scripts>kubectl get dependentapis -n components
-    NAME                                  READY   AGE   SVCINVID                               URL
-    par-party-party-role-management-api           55s
-    per-permission-party-management-api   true    6s    3755f127-19a4-429f-afcc-75befecbaa1f   https://localhost/par-party/tmf-api/party/v4
+    NAME                                  READY   AGE     SVCINVID                               URL
+    par-party-party-role-management-api           50m
+    per-permission-party-management-api   true    5m55s   19380cc0-a7c3-452b-a819-42a74ccb9fda   https://localhost/par-party/tmf-api/party/v4
 
-9.) The reason why party component has it dependent api not yet in status READ=true, is that there is a circular dependency between TMFC028 and TMFC035.
-    You must restart the canvas-depapi-op deployment, so that it resolves this cycle.
+11.) The reason why party component does not yet have its dependent api in the state READY=true, is that there is a circular dependency between TMFC028 and TMFC035.
+    To resolve this cycle, you must restart the canvas-depapi-op deployment.
 
     cmd> kubectl rollout restart deployment canvas-depapi-op -n canvas
 
-10.) cmd> kubectl get dependentapis -n components
+12.) After the restart, both components should reach the Complete status.
 
-    Now both dependent apis are in status READ=true
+    cmd> kubectl get components -n components
 
-    NAME                                  READY   AGE    SVCINVID                               URL
-    par-party-party-role-management-api   true    19m    fb52b03f-0566-431e-8ec5-f8060a89072b   https://localhost/per-permission/tmf-api/partyRoleManagement/v4
-    per-permission-party-management-api   true    7m9s   8a7e8764-cf89-4a68-96dd-395e180b98db   https://localhost/par-party/tmf-api/party/v4
+    NAME             DEPLOYMENT_STATUS
+    par-party        Complete
+    per-permission   Complete    
 
-11.) cmd> kubectl component-info
+13.) Now both dependent apis are in status READY=true
 
-    Now you should see both components are now in Deployment Status Complete:
+    cmd> kubectl get dependentapis -n components
+
+    NAME                                  READY   AGE   SVCINVID                               URL
+    par-party-party-role-management-api   true    66m   bd33150f-5c1b-490a-ae74-10dc71c16b72   https://localhost/per-permission/tmf-api/partyRoleManagement/v4
+    per-permission-party-management-api   true    21m   19380cc0-a7c3-452b-a819-42a74ccb9fda   https://localhost/par-party/tmf-api/party/v4
+
+14.) As a final optional step, you can use the ODA Canvas utility component-info to verify that both components have been successfully deployed.
+
+    See this doc on how to install the "component-info" utility
+    https://tmforum-oda.github.io/oda-ca-docs/canvas/source/utilities/README.html
+
+    cmd> kubectl component-info
 
     Using Components Custom Resource Definition: v1
 
@@ -100,19 +138,28 @@ Note:
              └─ developerUI: https://localhost/per-permission/tmf-api/partyRoleManagement/v4/docs
 
 
+
+
+
+
 ############# Second: run the CTK #############
 
-1.) cmd> cd <projectFolder>\TMFC028-PartyManagement\CTK\componentCTK
+1.) Navigate to the TMFC028 Party CTK tests
 
-2.) edit the CHANGE_ME.json in the directory componentCTK:
+    cmd> cd <projectFolder>\TMFC028-PartyManagement\CTK\componentCTK
+
+2.) Edit the CHANGE_ME.json file in the componentCTK directory. Set the "par" and "per" release names that were used in the
+    instructions above when deploying the TMFC028 and TMFC035-stub components to the ODA canvas.
 
     /releaseName="par"
     /component_to_run="tmfc028
     /dependentStubs/tmfc028/partyRole/releaseName="per"
 
-3.) run the CTK test script in the directory componentCTK:
+3.) Run the TMFC028 Party CTK test script:
 
-    WINDOWS-RUN.bat, run.sh or MAC-LINUX-RUN.sh
+    On Windows: WINDOWS-RUN.bat
+
+    On macOS/Linux: run.sh or MAC-LINUX-RUN.sh
 
 
 

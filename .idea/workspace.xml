@@ -4,16 +4,99 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3085e4be-decd-43a0-ab55-7e6c69785d81" name="Changes" comment="idea">
+    <list default="true" id="3085e4be-decd-43a0-ab55-7e6c69785d81" name="Changes" comment="better error message  in validateRelatedPartyHref">
+      <change afterPath="$PROJECT_DIR$/TMFC035-PermissionsManagement-stub/README" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TMF632_Party/utils/ruleUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/TMF632_Party/utils/ruleUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ODA-spec/TMFC028-PartyManagement.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ODA-specs/TMFC028-PartyManagement.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ODA-spec/TMFC035-PermissionsManagement.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ODA-specs/TMFC035-PermissionsManagement.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ODA-spec/oda-component-crd.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ODA-specs/oda-component-crd.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ODA-spec/oda-component-oas-v1.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ODA-specs/oda-component-oas-v1.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README-running-ctk-on-TMFC028-RI-and-TMFC035-RI" beforeDir="false" afterPath="$PROJECT_DIR$/README-running-ctk-on-TMFC028-RI-and-TMFC035-RI" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF632_Party/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/.dockerignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF632_Party/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF632_Party/.swagger-codegen-ignore" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/.swagger-codegen-ignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF632_Party/.swagger-codegen/VERSION" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/.swagger-codegen/VERSION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF632_Party/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF632_Party/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF632_Party/api/swagger.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/api/swagger.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF632_Party/builddockerfile.sh" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/builddockerfile.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF632_Party/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF632_Party/controllers/EventsSubscription.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/controllers/EventsSubscription.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF632_Party/controllers/Individual.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/controllers/Individual.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF632_Party/controllers/NotificationListenersClientSide.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/controllers/NotificationListenersClientSide.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF632_Party/controllers/Organization.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/controllers/Organization.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF632_Party/index.html_replacement" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/index.html_replacement" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF632_Party/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF632_Party/manifest.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/manifest.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF632_Party/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF632_Party/service/EventsSubscriptionService.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/service/EventsSubscriptionService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF632_Party/service/IndividualService.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/service/IndividualService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF632_Party/service/NotificationListenersClientSideService.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/service/NotificationListenersClientSideService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF632_Party/service/OrganizationService.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/service/OrganizationService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF632_Party/utils/entrypoint.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/utils/entrypoint.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF632_Party/utils/errorUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/utils/errorUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF632_Party/utils/mongoUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/utils/mongoUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF632_Party/utils/notificationUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/utils/notificationUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF632_Party/utils/operations.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/utils/operations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF632_Party/utils/operationsUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/utils/operationsUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF632_Party/utils/ruleUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/utils/ruleUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF632_Party/utils/rules.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/utils/rules.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF632_Party/utils/swaggerUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/utils/swaggerUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF632_Party/utils/writer.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party/utils/writer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/.dockerignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/.swagger-codegen-ignore" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/.swagger-codegen-ignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/.swagger-codegen/VERSION" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/.swagger-codegen/VERSION" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/api/swagger.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/api/swagger.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/builddockerfile.sh" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/builddockerfile.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/controllers/EventsSubscription.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/controllers/EventsSubscription.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/controllers/NotificationListenersClientSide.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/controllers/NotificationListenersClientSide.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/controllers/Permission.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/controllers/Permission.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/controllers/UserRole.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/controllers/UserRole.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/index.html_replacement" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/index.html_replacement" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/manifest.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/manifest.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/service/EventsSubscriptionService.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/service/EventsSubscriptionService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/service/NotificationListenersClientSideService.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/service/NotificationListenersClientSideService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/service/PermissionService.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/service/PermissionService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/service/UserRoleService.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/service/UserRoleService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/utils/entrypoint.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/utils/entrypoint.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/utils/errorUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/utils/errorUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/utils/mongoUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/utils/mongoUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/utils/notificationUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/utils/notificationUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/utils/operations.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/utils/operations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/utils/operationsUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/utils/operationsUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/utils/ruleUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/utils/ruleUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/utils/rules.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/utils/rules.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/utils/swaggerUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/utils/swaggerUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMF672_UserRoleAndPermission/utils/writer.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF672_UserRoleAndPermission/utils/writer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TMFC028-PartyManagement/CTK/componentCTK/CHANGE_ME.json" beforeDir="false" afterPath="$PROJECT_DIR$/TMFC028-PartyManagement/CTK/componentCTK/CHANGE_ME.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMFC035-PermissionsManagement/CTK/ComponentRI/Chart.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/TMFC035-PermissionsManagement-stub/CTK/ComponentRI/Chart.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMFC035-PermissionsManagement/CTK/ComponentRI/templates/_helpers.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/TMFC035-PermissionsManagement-stub/CTK/ComponentRI/templates/_helpers.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMFC035-PermissionsManagement/CTK/ComponentRI/templates/component-permissionmanagement.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/TMFC035-PermissionsManagement-stub/CTK/ComponentRI/templates/component-permissionmanagement.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMFC035-PermissionsManagement/CTK/ComponentRI/templates/cronjob-roleinitialization.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/TMFC035-PermissionsManagement-stub/CTK/ComponentRI/templates/cronjob-roleinitialization.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMFC035-PermissionsManagement/CTK/ComponentRI/templates/deployment-corepartyroleapi.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/TMFC035-PermissionsManagement-stub/CTK/ComponentRI/templates/deployment-corepartyroleapi.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMFC035-PermissionsManagement/CTK/ComponentRI/templates/deployment-mongodb.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/TMFC035-PermissionsManagement-stub/CTK/ComponentRI/templates/deployment-mongodb.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMFC035-PermissionsManagement/CTK/ComponentRI/templates/deployment-partyroleapi.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/TMFC035-PermissionsManagement-stub/CTK/ComponentRI/templates/deployment-partyroleapi.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMFC035-PermissionsManagement/CTK/ComponentRI/templates/deployment-userrolepermissionapi.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/TMFC035-PermissionsManagement-stub/CTK/ComponentRI/templates/deployment-userrolepermissionapi.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMFC035-PermissionsManagement/CTK/ComponentRI/templates/persistentVolumeClaim-mongodb.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/TMFC035-PermissionsManagement-stub/CTK/ComponentRI/templates/persistentVolumeClaim-mongodb.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMFC035-PermissionsManagement/CTK/ComponentRI/templates/service-corepartyroleapi.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/TMFC035-PermissionsManagement-stub/CTK/ComponentRI/templates/service-corepartyroleapi.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMFC035-PermissionsManagement/CTK/ComponentRI/templates/service-mongodb.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/TMFC035-PermissionsManagement-stub/CTK/ComponentRI/templates/service-mongodb.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMFC035-PermissionsManagement/CTK/ComponentRI/templates/service-partyroleapi.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/TMFC035-PermissionsManagement-stub/CTK/ComponentRI/templates/service-partyroleapi.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMFC035-PermissionsManagement/CTK/ComponentRI/templates/service-userrolepermissionapi.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/TMFC035-PermissionsManagement-stub/CTK/ComponentRI/templates/service-userrolepermissionapi.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMFC035-PermissionsManagement/CTK/ComponentRI/templates/tests/test-connection.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/TMFC035-PermissionsManagement-stub/CTK/ComponentRI/templates/tests/test-connection.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMFC035-PermissionsManagement/CTK/ComponentRI/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/TMFC035-PermissionsManagement-stub/CTK/ComponentRI/values.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager" show_ignored="true" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="SOFT" />
@@ -64,6 +147,7 @@
       <recent name="C:\projects\tmf\oda ctk\TMFC028-project" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\projects\tmf\oda ctk\TMFC028-project\dockerized-openapis" />
       <recent name="C:\projects\tmf\oda ctk\TMFC028-project" />
       <recent name="C:\projects\tmf\oda ctk\TMFC028-project\scratches" />
     </key>
@@ -124,7 +208,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1763998045588</updated>
-      <workItem from="1763998046544" duration="17361000" />
+      <workItem from="1763998046544" duration="26158000" />
     </task>
     <task id="LOCAL-00001" summary="interm commit">
       <option name="closed" value="true" />
@@ -214,7 +298,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764056112554</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="better error message  in validateRelatedPartyHref">
+      <option name="closed" value="true" />
+      <created>1764058545455</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1764058545455</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,7 +333,8 @@
     <MESSAGE value="update readme" />
     <MESSAGE value="update useful cmds" />
     <MESSAGE value="idea" />
-    <option name="LAST_COMMIT_MESSAGE" value="idea" />
+    <MESSAGE value="better error message  in validateRelatedPartyHref" />
+    <option name="LAST_COMMIT_MESSAGE" value="better error message  in validateRelatedPartyHref" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
