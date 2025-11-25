@@ -408,16 +408,18 @@ async function validateRelatedPartyHref(payload) {
       Rewrite the href variable to make it accessible internaly within k8s ODA canvas.
       We must use k8s internal Istio gateway URL "istio-ingress.istio-ingress.svc.cluster.local" instead of localhost,
       because party service within k8s cannot connect to the URL of the dependent partyroleapi
-      https://localhost/per-permission/tmf-api/partyRoleManagement/v4/ externaly exposed by the TMC035 Permission component.
+      externaly exposed by the TMC035 Permission component.
+      For example: https://localhost/per-permission/tmf-api/partyRoleManagement/v4/
 
       TODO: Review this rewrite approach where we use the internal Istio ingress URL. This may not be how it is supposed to be done.
             A more correct approach might be to introspect the ODA Canvas's resource and/or service inventory APIs.
     */
     try {
-        // Incoming: https://localhost/per-permission/tmf-api/partyRoleManagement/v4/partyRole/UUID
+        // Incoming: http(s)://localhost/per-permission/tmf-api/partyRoleManagement/v4/partyRole/UUID
         // Desired: http://istio-ingress.istio-ingress.svc.cluster.local/per-permission/tmf-api/partyRoleManagement/v4/partyRole/UUID
 
-        const rewritten = href.replace("https://localhost/", "http://istio-ingress.istio-ingress.svc.cluster.local/");
+        const rewritten = href.replace(/^https?:\/\/localhost\//, "http://istio-ingress.istio-ingress.svc.cluster.local/");
+
         console.log(`Rewriting relatedParty href:\n  from: ${href}\n    to: ${rewritten}`);
         // update the above href variable
         href=rewritten;
@@ -445,7 +447,7 @@ async function validateRelatedPartyHref(payload) {
 }
 
 /*
-This method is not used, but we left it here just in case as an alterantive to the above validateRelatedPartyHref.
+This function is not used, but we left it here just in case as an alterantive to the above validateRelatedPartyHref().
  */
 async function validateRelatedPartyHref_by_env_DEPENDENTAPI_PARTYROLE_SERVICE_NAME(payload) {
   console.log("validateRelatedPartyHref input:", JSON.stringify(payload, null, 2));
@@ -461,8 +463,8 @@ async function validateRelatedPartyHref_by_env_DEPENDENTAPI_PARTYROLE_SERVICE_NA
   /*
     Rewrite the href variable to make it accessible internaly within k8s ODA canvas.
     We must use the k8s internal service url, instead of localhost, because party service within k8s cannot connect to the url
-    of the dependent partyroleapi https://localhost/per-permission/tmf-api/partyRoleManagement/v4/ externaly exposed by
-    the TMC035 Permission component.
+    of the dependent partyroleapi externaly exposed by the TMC035 Permission component.
+    For example: https://localhost/per-permission/tmf-api/partyRoleManagement/v4/
   */
     const serviceName = process.env.DEPENDENTAPI_PARTYROLE_SERVICE_NAME;
     if (!serviceName) {
