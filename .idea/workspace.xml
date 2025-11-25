@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="3085e4be-decd-43a0-ab55-7e6c69785d81" name="Changes" comment="update readme">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README-running-ctk-on-TMFC028-RI-and-TMFC035-RI" beforeDir="false" afterPath="$PROJECT_DIR$/README-running-ctk-on-TMFC028-RI-and-TMFC035-RI" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-DOCKERIZED/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dockerized-openapis/TMF632_Party_v4.0-DOCKERIZED/index.js" afterDir="false" />
     </list>
-    <list id="a812486d-8ef9-4907-a832-44f0f7dd4073" name="do not commit" comment="">
+    <list id="a812486d-8ef9-4907-a832-44f0f7dd4073" name="do not commit" comment="do not commit">
       <change beforePath="$PROJECT_DIR$/TMFC028-PartyManagement/CTK/componentCTK/CHANGE_ME.json" beforeDir="false" afterPath="$PROJECT_DIR$/TMFC028-PartyManagement/CTK/componentCTK/CHANGE_ME.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -135,7 +135,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1763998045588</updated>
-      <workItem from="1763998046544" duration="35883000" />
+      <workItem from="1763998046544" duration="38583000" />
     </task>
     <task id="LOCAL-00001" summary="interm commit">
       <option name="closed" value="true" />
@@ -265,7 +265,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764084025572</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="update readme">
+      <option name="closed" value="true" />
+      <created>1764093210049</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1764093210049</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

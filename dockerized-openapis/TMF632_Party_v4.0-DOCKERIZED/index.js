@@ -32,6 +32,12 @@ const options = {
 
 const swaggerDoc = swaggerUtils.getSwaggerDoc();
 
+    /*
+Party openapi swagger.yml has "host" hardcoded to "api-party-v4-0-0.mybluemix.net"
+Override it with "localhost" so that swagger-gui works when issuing requests towards local oda-canvas.
+*/
+swaggerDoc.host = "localhost";
+
 
 // Get Component instance name from Environment variable and put it at start of API path
 var componentName = process.env.COMPONENT_NAME;
