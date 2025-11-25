@@ -427,7 +427,7 @@
                 "name": "Acme Corporation - Supplier",
                 "engagedParty": {
                     "id": "dummyAcmePartyId",
-                    "href": "https://localhost/<release>-party/tmf-api/party/v4/organization/dummyAcmePartyId",
+                    "href": "https://localhost/<RELEASE_NAME>-party/tmf-api/party/v4/organization/dummyAcmePartyId",
                     "name": "Acme Corporation - Party",
                     "role": "Supplier",
                     "@referredType": "organization"
