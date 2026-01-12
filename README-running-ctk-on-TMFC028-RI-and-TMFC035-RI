@@ -16,6 +16,21 @@ TMFC028 Party component, which depends on this API. This stub is used when runni
 It allows the TMFC028 Party component to interact with the PartyRole API and verify that a partyRole instance referenced
 in "party.engagedParty[0]" actually exists in the TMFC035 PartyRole service.
 
+Note:   Prerequisites:
+        - A working ODA Canvas installation is required. For installation instructions, see:
+          https://github.com/tmforum-oda/oda-canvas/tree/main/installation
+
+        - Verify that your kubectl context is correctly configured. For example, if you are
+          running Kubernetes locally with Docker Desktop, confirm the context is set:
+
+            cmd> kubectl config current-context
+            docker-desktop
+
+          If the context is incorrect, set it to the appropriate one:
+
+            cmd> kubectl config use-context docker-desktop
+
+
 
 1.) Open CMD terminal and navigate to the TMFC028 Party ComponentRI folder.
 
@@ -145,8 +160,22 @@ in "party.engagedParty[0]" actually exists in the TMFC035 PartyRole service.
 
 
 
+15.) As shown above, API documentation is available at the following URLs:
 
+    https://localhost/par-party/tmf-api/party/v4/docs
+    https://localhost/per-permission/userrolepermission/v4/docs
+    https://localhost/per-permission/tmf-api/partyRoleManagement/v4/docs
 
+    Open these URLs in your browser to display the Swagger UI for each API:
+
+    - The first URL displays the Swagger UI for the TMF632 Party Management API, which is
+      the coreFunction exposed by the TMFC028 component.
+
+    - The second URL displays the Swagger UI for the TMF672 UserRole Permission Management API,
+      which is the coreFunction exposed by the TMFC035 component.
+
+    - The third URL displays the Swagger UI for the TMF669 PartyRole Management API, which is
+      the coreFunction exposed by the TMFC035 component.
 
 ############# Second: run the CTK #############
 
@@ -158,7 +187,7 @@ in "party.engagedParty[0]" actually exists in the TMFC035 PartyRole service.
     instructions above when deploying the TMFC028 and TMFC035-stub components to the ODA canvas.
 
     /releaseName="par"
-    /component_to_run="tmfc028
+    /component_to_run="tmfc028"
     /dependentStubs/tmfc028/partyRole/releaseName="per"
 
 3.) Run the TMFC028 Party CTK test script:
