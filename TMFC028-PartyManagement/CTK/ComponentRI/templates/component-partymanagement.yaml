@@ -55,5 +55,14 @@ spec:
     dependentAPIs: []
   securityFunction:
     canvasSystemRole: {{.Values.security.canvasSystemRole}}
-    exposedAPIs: []
+    exposedAPIs:
+    - name: partyrole
+      specification:
+      - url: "https://tmf-open-api-table-documents.s3.eu-west-1.amazonaws.com/OpenApiTable/TMF669_Party_Role/4.0.0/swagger/TMF669_Party_Role_Management_API_v4.0.0_swagger.json"
+        version: v4.0.0
+      implementation: {{.Release.Name}}-partyroleapi
+      apiType: openapi
+      path: /{{.Release.Name}}-{{.Values.component.name}}/tmf-api/partyRoleManagement/v4
+      developerUI: /{{.Release.Name}}-{{.Values.component.name}}/tmf-api/partyRoleManagement/v4/docs
+      port: 8080
     

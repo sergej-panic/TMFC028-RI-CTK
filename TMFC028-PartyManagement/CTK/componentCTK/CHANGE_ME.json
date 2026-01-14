@@ -409,6 +409,21 @@
                     }
                 ]
             },
+            "supplier-party-0001": {
+                "@type": "organization",
+                "name": "Acme Corporation",
+                "tradingName": "Acme"
+            },
+            "supplier-party-role-0001": {
+                "name": "Acme Corporation - Supplier Role",
+                "engagedParty": {
+                    "id": "__VALID_PARTY_ID__",
+                    "href": "__VALID_PARTY_HREF__",
+                    "name": "Acme Corporation",
+                    "role": "Supplier",
+                    "@referredType": "organization"
+                }
+            },
             "party-target-0002": {
                 "@type": "organization",
                 "name": "Coffee Do Brazil",
@@ -423,12 +438,17 @@
                     }
                 ]
             },
-            "party-role-0001": {
-                "name": "Acme Corporation - Supplier",
+            "supplier-party-0002": {
+                "@type": "organization",
+                "name": "Acme Corporation",
+                "tradingName": "Acme"
+            },
+            "supplier-party-role-0002": {
+                "name": "Acme Corporation - Supplier Role",
                 "engagedParty": {
-                    "id": "dummyAcmePartyId",
-                    "href": "https://localhost/<RELEASE_NAME>-party/tmf-api/party/v4/organization/dummyAcmePartyId",
-                    "name": "Acme Corporation - Party",
+                    "id": "__VALID_PARTY_ID__",
+                    "href": "__VALID_PARTY_HREF__",
+                    "name": "Acme Corporation",
                     "role": "Supplier",
                     "@referredType": "organization"
                 }

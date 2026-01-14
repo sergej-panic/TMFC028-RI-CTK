@@ -73,4 +73,10 @@ spec:
   securityFunction:
     canvasSystemRole: {{.Values.security.canvasSystemRole}}
     exposedAPIs: []
+    dependentAPIs: []
+    componentRole:
+    - name: urpadmin
+      description: User Role & Permission Administrator - full CRUD access to all permission and role resources
+    - name: urpviewer
+      description: User Role & Permission Viewer - read-only access to view permissions and roles
     
