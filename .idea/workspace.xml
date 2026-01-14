@@ -4,31 +4,46 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3085e4be-decd-43a0-ab55-7e6c69785d81" name="Changes" comment="update party swagger.host to localhost">
-      <change afterPath="$PROJECT_DIR$/TMFC028-RI-implementation-description.docx" afterDir="false" />
+    <list default="true" id="3085e4be-decd-43a0-ab55-7e6c69785d81" name="Changes" comment="- Refactor TMFC028 tests to create complete entity reference chain&#10;- Refactor TMFC035 component to use static roles">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BDD-windows-text-output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/BDD-windows-text-output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README-running-ctk-on-TMFC028-RI-and-TMFC035-RI" beforeDir="false" afterPath="$PROJECT_DIR$/README-running-ctk-on-TMFC028-RI-and-TMFC035-RI" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMCF028 reference implementation and CTK.eml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMFC028-PartyManagement/CTK/ComponentRI/templates/component-partymanagement.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/TMFC028-PartyManagement/CTK/ComponentRI/templates/component-partymanagement.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMFC028-RI-CTK-ODA.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMFC028-RI-implementation-description.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMFC035-PermissionsManagement-stub/README" beforeDir="false" afterPath="$PROJECT_DIR$/TMFC035-PermissionsManagement-stub/README" afterDir="false" />
     </list>
     <list id="a812486d-8ef9-4907-a832-44f0f7dd4073" name="do not commit" comment="do not commit" />
+    <list id="6b78214d-f70f-44a4-a3e1-06afc5140f72" name="pazi" comment="">
+      <change beforePath="$PROJECT_DIR$/TMFC028-PartyManagement/CTK/componentCTK/CHANGE_ME.json" beforeDir="false" afterPath="$PROJECT_DIR$/TMFC028-PartyManagement/CTK/componentCTK/CHANGE_ME.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" show_ignored="true" />
+  <component name="ChangesViewManager" show_ignored="true">
+    <option name="groupingKeys">
+      <option value="directory" />
+      <option value="repository" />
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="SOFT" />
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="35vkfspJKn4kNT6RV3j4NAQStPe" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
@@ -45,7 +60,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/projects/tmf/oda ctk/TMFC028-project",
+    "last_opened_file_path": "C:/projects/tmf/oda ctk/TMFC028-project/TMFC028-PartyManagement/CTK/componentCTK/resources/api-ctks",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -60,12 +75,15 @@
   },
   "keyToStringList": {
     "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "JSON",
       "TEXT"
     ]
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\projects\tmf\oda ctk\TMFC028-project\TMFC028-PartyManagement\CTK\componentCTK\resources\api-ctks" />
+      <recent name="C:\projects\tmf\oda ctk\TMFC028-project\openapi-ctks" />
       <recent name="C:\projects\tmf\oda ctk\TMFC028-project" />
       <recent name="C:\projects\tmf\oda ctk\TMFC028-project\dockerized-openapis" />
       <recent name="C:\projects\tmf\oda ctk\TMFC028-project\productinventory--copied-from-akumartmf-productinventoryapi-docker-image" />
@@ -279,18 +297,85 @@
       <option name="project" value="LOCAL" />
       <updated>1764107862793</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="added local TMF632_v4 and TMF669_v4 to TMFC028-PartyManagement\CTK\componentCTK\resources\api-ctks because they are not currently availiable online">
+      <option name="closed" value="true" />
+      <created>1768365456865</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1768365456865</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Refactor TMFC028 tests to create complete entity reference chain">
+      <option name="closed" value="true" />
+      <created>1768373100252</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1768373100252</updated>
+    </task>
+    <task id="LOCAL-00021" summary="CHANGE_ME.json">
+      <option name="closed" value="true" />
+      <created>1768373222808</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1768373222808</updated>
+    </task>
+    <task id="LOCAL-00022" summary="refactor to static roles">
+      <option name="closed" value="true" />
+      <created>1768373258154</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1768373258154</updated>
+    </task>
+    <task id="LOCAL-00023" summary="- Refactor TMFC028 tests to create complete entity reference chain&#10;- Refactor TMFC035 component to use static roles">
+      <option name="closed" value="true" />
+      <created>1768373609518</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1768373609518</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="githuborigin/duplicate-partyrole-endpoint" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -311,7 +396,12 @@
     <MESSAGE value="set &lt;RELEASE_NAME&gt; to  party-role-0001.json href" />
     <MESSAGE value="update readme" />
     <MESSAGE value="update party swagger.host to localhost" />
-    <option name="LAST_COMMIT_MESSAGE" value="update party swagger.host to localhost" />
+    <MESSAGE value="added local TMF632_v4 and TMF669_v4 to TMFC028-PartyManagement\CTK\componentCTK\resources\api-ctks because they are not currently availiable online" />
+    <MESSAGE value="Refactor TMFC028 tests to create complete entity reference chain" />
+    <MESSAGE value="CHANGE_ME.json" />
+    <MESSAGE value="refactor to static roles" />
+    <MESSAGE value="- Refactor TMFC028 tests to create complete entity reference chain&#10;- Refactor TMFC035 component to use static roles" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Refactor TMFC028 tests to create complete entity reference chain&#10;- Refactor TMFC035 component to use static roles" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

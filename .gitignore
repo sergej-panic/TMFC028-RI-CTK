@@ -1,8 +1,4 @@
-/TMFC028-PartyManagement/CTK/componentCTK/resources/*
-# Exception: Do NOT ignore api-ctks because we want to be able to commit local ctks (like TMF632_v4) because they might not be available online
-!/TMFC028-PartyManagement/CTK/componentCTK/resources/api-ctks
-!/TMFC028-PartyManagement/CTK/componentCTK/resources/api-ctks/**
-
+/TMFC028-PartyManagement/CTK/componentCTK/resources/
 /TMFC028-PartyManagement/CTK/componentCTK/Reports/
 /TMFC028-PartyManagement/CTK/componentCTK/src/node_modules
 /TMFC028-PartyManagement/CTK/componentCTK/src/features/payloads

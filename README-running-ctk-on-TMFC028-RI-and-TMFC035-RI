@@ -137,16 +137,11 @@ Note:   Prerequisites:
     Namespace: components
     Deployment Status: Complete
     └─ APIs
-       ├─ coreFunction
-       │  └─ par-party-party-management-api
-       │     ├─ url: https://localhost/par-party/tmf-api/party/v4
-       │     ├─ ready: true
-       │     └─ developerUI: https://localhost/par-party/tmf-api/party/v4/docs
-       └─ securityFunction
-          └─ par-party-partyrole
-             ├─ url: https://localhost/par-party/tmf-api/partyRoleManagement/v4
+       └─ coreFunction
+          └─ par-party-party-management-api
+             ├─ url: https://localhost/par-party/tmf-api/party/v4
              ├─ ready: true
-             └─ developerUI: https://localhost/par-party/tmf-api/partyRoleManagement/v4/docs
+             └─ developerUI: https://localhost/par-party/tmf-api/party/v4/docs
 
 
 
@@ -169,31 +164,20 @@ Note:   Prerequisites:
 
 15.) As shown above, API documentation is available at the following URLs:
 
+    https://localhost/par-party/tmf-api/party/v4/docs
+    https://localhost/per-permission/userrolepermission/v4/docs
+    https://localhost/per-permission/tmf-api/partyRoleManagement/v4/docs
+
     Open these URLs in your browser to display the Swagger UI for each API:
 
-    1.) The Swagger UI for the TMF632 Party Management API, which is
-        the coreFunction exposed by the TMFC028 component:
+    - The first URL displays the Swagger UI for the TMF632 Party Management API, which is
+      the coreFunction exposed by the TMFC028 component.
 
-        https://localhost/par-party/tmf-api/party/v4/docs
+    - The second URL displays the Swagger UI for the TMF672 UserRole Permission Management API,
+      which is the coreFunction exposed by the TMFC035 component.
 
-    2.) The Swagger UI for the TMF669 PartyRole Management API, which is
-        the securityFunction exposed by the TMFC028 component:
-
-        https://localhost/par-party/tmf-api/partyRoleManagement/v4/docs
-
-    3.) The Swagger UI for the TMF672 UserRole Permission Management API, which is
-        the coreFunction exposed by the TMFC035 component:
-
-        https://localhost/per-permission/userrolepermission/v4/docs
-
-    4.) The Swagger UI for the TMF669 PartyRole Management API, which is
-        the !!!coreFunction!!! exposed by the TMFC035 component.
-
-        !!! Note that this is not the sucrityFunction PartyRole API. TMFC035 component Reference Implementation does not
-        expose the securtyFunction over a PartyRole API because it has roles staticaly defined in the component YAML specification.
-
-        https://localhost/per-permission/tmf-api/partyRoleManagement/v4/docs
-
+    - The third URL displays the Swagger UI for the TMF669 PartyRole Management API, which is
+      the coreFunction exposed by the TMFC035 component.
 
 
 

@@ -2,4 +2,4 @@ This folder contains the TMFC035 component, implemented as a stub. It exposes th
 TMFC028 Party component, which depends on this API.
 
 This stub is used when running the TMFC028 CTK BDD tests. It allows the TMFC028 Party component to interact with the PartyRole API
-and verify that a partyRole instance referenced in "party.engagedParty[0]" actually exists in the TMFC035 PartyRole service.
+and verify that a partyRole instance referenced in "party.relatedParty[0]" actually exists in the TMFC035 PartyRole service.
